@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/grey_75" android:layout_width="114.0dip" android:layout_height="64.0dip">
+        <ImageView android:id="@id/iv_card_movie" android:layout_width="114.0dip" android:layout_height="64.0dip" android:src="@mipmap/logo_big" android:scaleType="centerCrop" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/shadow_bg" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="10.0dip" android:id="@id/tv_card_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip" android:text="01:45:22" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/iv_card_label" android:background="@drawable/tag_corner_bg" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:text="热播" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dip" android:textColor="@color/text_22" android:id="@id/search_title" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="大圣归来：大圣归来大圣归来大圣归来大圣归来" android:maxLines="2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dip" android:textColor="@color/grey_99" android:id="@id/search_playcount" android:paddingLeft="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="播放：9999.9万" android:maxLines="1" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_douban_score" android:background="@drawable/play_green_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="豆瓣8.1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

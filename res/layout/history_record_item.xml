@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_record_item" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="92.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_ck" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:src="@mipmap/login_checkbox_normal" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/fl_poster" android:layout_width="110.0dip" android:layout_height="62.0dip" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_toRightOf="@id/iv_ck" android:layout_centerVertical="true">
+        <ImageView android:id="@id/iv_poster" android:background="@color/grey_75" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/logo_big" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/shadow_bg" android:scaleType="fitXY" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_gravity="bottom|center|right" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" android:text="01:24:30" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/fl_poster" android:layout_centerVertical="true">
+        <TextView android:textColor="@color/content_h1" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="大圣归来: " android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/content_h3" android:ellipsize="end" android:id="@id/tv_sort_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="大圣归来" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/content_h3" android:ellipsize="end" android:id="@id/tv_watch_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="大圣归来: 大圣归来大圣归来大圣归来" android:singleLine="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:background="@color/my_bg_color" android:layout_width="fill_parent" android:layout_height="0.75dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

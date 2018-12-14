@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:right_text="进入商城" app:title="兑换中心" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@mipmap/background_missioncenter_money" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="91.0dip">
+            <TextView android:textSize="13.0dip" android:textColor="@color/grey_e3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="麻花币余额" />
+            <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="36.0dip" android:textColor="@color/grey_e3" android:id="@id/tv_exchange_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="10.0dip" android:src="@mipmap/icon_missioncenter_money" />
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v4.widget.NestedScrollView android:id="@id/nsv_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/linear_changed" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/text_33" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已兑换特权" />
+                    <android.support.v7.widget.RecyclerView android:id="@id/recycler_changed" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <View android:background="@color/grey_e3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_un_exchange" android:paddingLeft="15.0dip" android:paddingTop="30.0dip" android:paddingRight="15.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/text_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未兑换特权" />
+                    <android.support.v7.widget.RecyclerView android:id="@id/recycler_unchanged" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <com.mh.movie.core.mvp.ui.widget.StateView android:id="@id/sv_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

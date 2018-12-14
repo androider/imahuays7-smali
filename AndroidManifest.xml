@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amahua.ompimdrt"
+    platformBuildVersionCode="20300"
+    platformBuildVersionName="2.3.0"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE" />
+
+    <permission
+        android:name="com.amahua.ompimdrt.push.permission.MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.amahua.ompimdrt.push.permission.MESSAGE" />
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.amahua.ompimdrt.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.amahua.ompimdrt.permission.C2D_MESSAGE" />
+    <permission
+        android:name="com.amahua.ompimdrt.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signatureOrSystem" />
+    <uses-permission android:name="com.amahua.ompimdrt.permission.MIPUSH_RECEIVE" />
+    <application
+        android:name="com.mh.movie.core.mvp.ui.MHApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:resizeableActivity="false"
+        android:supportsRtl="true"
+        android:theme="@style/ActTheme">
+        <meta-data
+            android:name="notch.config"
+            android:value="none" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.amahua.ompimdrt.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity
+            android:name="com.amahua.ompimdrt.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sdksample" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.openinstall.APP_KEY"
+            android:value="n6e9o2" />
+
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="n6e9o2" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lib.MipushActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/tencent_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.mh.movie.core.androidupnp.service.ClingUpnpService"
+            android:exported="false" />
+        <service
+            android:name="com.mh.movie.core.androidupnp.service.SystemService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.UserActivity"
+            android:screenOrientation="portrait" />
+        <service android:name="com.mh.movie.core.mvp.ui.receiver.DownloadService" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="375" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="667" />
+        <meta-data
+            android:name="com.mh.movie.core.app.GlobalConfiguration"
+            android:value="ConfigModule" />
+
+        <service
+            android:name="com.mh.movie.core.andserver.CoreService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.mh.movie.core.receiver" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.main.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http://mahautest" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.player.PlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.user.TestDaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.user.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.MoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.HelpAndFeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.PlayRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.AllActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.CollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.user.RegistActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.EditNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.SetGenderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.HeaderImgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.MyCacheActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.user.ForgetPswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.ConCurrentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.player.TagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.user.QuickLoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.user.SearchStateNumActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.SystemMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.CommentMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.FeedBackMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.player.ScreeningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.TvplayDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.player.LikeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.CastHelperActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.MyInviteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.ExChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.VipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.QuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.QuestionStartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.QuestionResultActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.mh.movie.core.mvp.ui.service.FileService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.MyCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.SetInvitationBindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.AccountCheckTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.ModifyPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.MyLevelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.ExperienceRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.SubscribeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.MallWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.RuleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.QRCodeActivity1"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.mh.movie.core.mvp.ui.activity.CommentDetailActivity" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.PartnerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.GetMoneyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.BindAliPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.BindBankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.ExchangeRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.PartnerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.SelectBankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.PartnerRightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mh.movie.core.mvp.ui.activity.WatchedShareActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.taobao.accs.ChannelService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.ELECTION" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.taobao.accs.data.MsgDistributeService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.accs.EventReceiver"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.taobao.accs.ServiceReceiver"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.taobao.accs.internal.AccsJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":channel" />
+        <service
+            android:name="com.taobao.accs.ChannelService$KernelService"
+            android:process=":channel" />
+        <service
+            android:name="org.android.agoo.accs.AgooService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.UmengIntentService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.XiaomiIntentService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.agoo.AgooCommondReceiver"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.amahua.ompimdrt.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.umeng.messge.registercallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.enablecallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.disablecallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.handler.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.sendmessage.action" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.UmengDownloadResourceService"
+            android:exported="false" />
+
+        <provider
+            android:name="com.umeng.message.provider.MessageProvider"
+            android:authorities="com.amahua.ompimdrt.umeng.message"
+            android:exported="false">
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider>
+        <receiver android:name="org.android.agoo.huawei.HuaWeiReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+                <action android:name="com.huawei.intent.action.PUSH" />
+                <action android:name="com.huawei.intent.action.PUSH_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="org.android.agoo.xiaomi.MiPushBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.bumptech.glide.integration.webp.WebpGlideModule"
+            android:value="GlideModule" />
+        <activity
+            android:name="com.yanzhenjie.permission.PermissionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="standard"
+            android:theme="@style/Permission.Theme.Activity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <provider
+            android:name="com.yanzhenjie.permission.FileProvider"
+            android:authorities="com.amahua.ompimdrt.file.path.share"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/permission_file_paths" />
+        </provider>
+        <provider
+            android:name="me.jessyan.autosize.InitProvider"
+            android:authorities="com.amahua.ompimdrt.autosize-init-provider"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareToStoryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_STORY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

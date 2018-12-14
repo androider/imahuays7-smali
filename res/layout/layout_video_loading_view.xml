@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/player_video_loading_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom">
+        <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/rl_loading" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_player_video_loading" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="正在加载中" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_play_load_3point" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="..." android:layout_toRightOf="@id/tv_player_video_loading" />
+        </RelativeLayout>
+        <View android:gravity="center" android:layout_gravity="center" android:id="@id/progress" android:layout_width="50.0dip" android:layout_height="30.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/tv_player_video_loading_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 KB/S" android:shadowColor="#88000000" android:shadowDx="5.0" android:shadowDy="5.0" android:shadowRadius="10.0" />
+        <View android:layout_width="wrap_content" android:layout_height="11.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_e8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:right_icon="@null" app:title="成长记录" />
+    <LinearLayout android:id="@id/ll_operator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top">
+        <android.support.v7.widget.RecyclerView android:id="@id/wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.mh.movie.core.mvp.ui.widget.StateView android:id="@id/sv_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

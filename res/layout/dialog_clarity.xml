@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rg_clarity" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/ll_clarity_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@mipmap/checkmark" />
+            <RadioButton android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/clarity_text_color_selector" android:gravity="center" android:id="@id/rb_clarity_3" android:paddingLeft="8.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="49.0dip" android:button="@mipmap/video_tag_4" android:text="蓝光" android:drawablePadding="16.0dip" />
+            <ImageView android:id="@id/iv_clarity_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@mipmap/checkmark" />
+        </LinearLayout>
+        <View android:background="@color/grey_e8" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:id="@id/ll_clarity_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@mipmap/checkmark" />
+            <RadioButton android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/clarity_text_color_selector" android:gravity="center" android:id="@id/rb_clarity_2" android:clickable="false" android:layout_width="wrap_content" android:layout_height="49.0dip" android:button="@null" android:text="超清" android:drawablePadding="16.0dip" />
+            <ImageView android:id="@id/iv_clarity_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@mipmap/checkmark" />
+        </LinearLayout>
+        <View android:background="@color/grey_e8" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:id="@id/ll_clarity_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@mipmap/checkmark" />
+            <RadioButton android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/clarity_text_color_selector" android:gravity="center" android:id="@id/rb_clarity_1" android:clickable="false" android:layout_width="wrap_content" android:layout_height="49.0dip" android:button="@null" android:text="高清" android:drawablePadding="16.0dip" />
+            <ImageView android:id="@id/iv_clarity_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@mipmap/checkmark" />
+        </LinearLayout>
+        <View android:background="@color/grey_e8" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:id="@id/ll_clarity_0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@mipmap/checkmark" />
+            <RadioButton android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/clarity_text_color_selector" android:gravity="center" android:id="@id/rb_clarity_0" android:clickable="false" android:layout_width="wrap_content" android:layout_height="49.0dip" android:button="@null" android:text="标清" android:drawablePadding="16.0dip" />
+            <ImageView android:id="@id/iv_clarity_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@mipmap/checkmark" />
+        </LinearLayout>
+        <View android:background="@color/grey_e8" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="15.0dip" android:textColor="@color/text_33" android:gravity="center" android:id="@id/rb_clarity_cancel" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="取消" />
+</LinearLayout>

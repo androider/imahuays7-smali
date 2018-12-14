@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.banner.BGABanner android:id="@id/b_main_movie" android:layout_width="fill_parent" android:layout_height="fill_parent" app:banner_indicatorGravity="right" app:banner_isNeedShowIndicatorOnOnlyOnePage="true" app:banner_pointContainerBackground="#00000000" app:banner_pointContainerLeftRightPadding="14.0dip" app:banner_pointDrawable="@drawable/banner_drawable" app:banner_pointLeftRightMargin="2.0dip" app:banner_pointTopBottomMargin="6.0dip" app:banner_tipTextColor="@color/white" app:banner_tipTextSize="16.0dip" />
+</LinearLayout>

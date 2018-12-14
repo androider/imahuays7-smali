@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/share_top_round_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/tv_size_small" android:textColor="@color/text_33" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="20.0dip" android:text="分享至" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_share_moments" android:background="@drawable/white_gray_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_share_moments" />
+                <TextView android:textSize="@dimen/tv_size_micro" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/share_moments" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_share_wechat" android:background="@drawable/white_gray_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_share_wechat" />
+                <TextView android:textSize="@dimen/tv_size_micro" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/share_wechat" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_share_qq" android:background="@drawable/white_gray_selector" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_share_qq" />
+                <TextView android:textSize="@dimen/tv_size_micro" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/share_qq" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_share_qzone" android:background="@drawable/white_gray_selector" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_share_qzone" />
+                <TextView android:textSize="@dimen/tv_size_micro" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/share_qzone" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_share_web" android:background="@drawable/white_gray_selector" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_share_web" />
+                <TextView android:textSize="@dimen/tv_size_micro" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/share_web" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_copy_link" android:background="@drawable/white_gray_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_copy_link" />
+                <TextView android:textSize="@dimen/tv_size_micro" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/share_link" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#fff3f3f5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="16.0dip" />
+    <TextView android:textSize="@dimen/tv_size_small" android:textColor="@color/text_33" android:gravity="center" android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="取消" />
+</LinearLayout>

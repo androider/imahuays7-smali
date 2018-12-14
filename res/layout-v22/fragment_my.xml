@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.MyTopbar android:id="@id/my_topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:mytopbar_left_icon="@mipmap/icon_mine_orcode" app:mytopbar_left_text="扫一扫" app:mytopbar_right_icon1="@mipmap/icon_mine_setting" app:mytopbar_right_icon2="@mipmap/icon_mine_information" app:mytopbar_transparent="true" />
+    <com.mh.movie.core.mvp.ui.widget.scroller.HeadZoomScrollView android:id="@id/hzs_header_zoom_view" android:background="@color/grey_e8" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_layout" android:paddingBottom="64.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="vertical" android:id="@id/ll_zoom" android:background="@mipmap/background_missioncenter_money" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.constraint.ConstraintLayout android:id="@id/ll_header_drag" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_centerHorizontal="true">
+                        <ImageView android:id="@id/iv_header_zoom" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <View android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    </android.support.constraint.ConstraintLayout>
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_login_regist" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <Button android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_login" android:background="@drawable/my_login_btn_bg" android:padding="1.0dip" android:layout_width="100.0dip" android:layout_height="36.0dip" android:layout_marginLeft="60.0dip" android:text="登录" android:layout_centerVertical="true" android:onClick="onClick" />
+                            </RelativeLayout>
+                            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <Button android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_regist" android:background="@drawable/my_login_btn_bg" android:padding="1.0dip" android:layout_width="100.0dip" android:layout_height="36.0dip" android:layout_marginRight="60.0dip" android:text="注册" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_login_success" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="4.0dip">
+                            <include layout="@layout/my_login_success" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_wallet" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_mine_wallet" app:mi_text_size="14.0dip" app:mi_title="麻花钱包" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/grey_fb" android:gravity="center" android:id="@id/tv_my_money" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="9000" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/ll_exchange" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_mine_exchange" app:mi_text_size="14.0dip" app:mi_title="兑换中心" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/ll_vip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_mine_vip" app:mi_text_size="14.0dip" app:mi_title="VIP独享" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/ll_invite" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_mine_invite" app:mi_text_size="14.0dip" app:mi_title="邀请好友" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_partner" android:background="@mipmap/partner_1" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_partner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="成为麻花推广员" />
+                    <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_partner_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="邀请好友拿分红" />
+                </LinearLayout>
+                <View android:id="@id/view_divider" android:background="#fff3f3f5" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.mh.movie.core.mvp.ui.widget.MyTItleRecycler android:id="@id/mt_playrecord" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mr_enable_cache="false" app:mr_left_title="播放记录" />
+                <View android:background="#fff2f4f5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.mh.movie.core.mvp.ui.widget.MyTitleRecyclerDown android:id="@id/mt_offline_cache" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mr_enable_cache="true" app:mr_left_title="离线缓存" app:mr_right_title="今日剩余" />
+                <View android:background="#fff2f4f5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <com.mh.movie.core.mvp.ui.widget.MyUnderLineText android:id="@id/ml_my_collection" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ul_left_margin="10.0dip" app:ul_title="我的收藏" />
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingHorizontal="16.0dip">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ml_my_hot_comnunication" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_potato_com" app:mi_text_size="12.0dip" app:mi_title="Potato交流群" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ml_my_consultant" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_kefu" app:mi_text_size="12.0dip" app:mi_title="QQ交流群" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ml_my_cast_helper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_cast" app:mi_text_size="12.0dip" app:mi_title="投屏助手" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ml_my_feedback" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_feedback" app:mi_text_size="12.0dip" app:mi_title="帮助与反馈" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ml_my_wechat" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_wechat" app:mi_text_size="12.0dip" app:mi_title="订阅我们" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_wechat" app:mi_text_size="12.0dip" app:mi_title="订阅我们" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_wechat" app:mi_text_size="12.0dip" app:mi_title="订阅我们" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.mh.movie.core.mvp.ui.widget.MyIconItem android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mi_icon="@mipmap/icon_wechat" app:mi_text_size="12.0dip" app:mi_title="订阅我们" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.mh.movie.core.mvp.ui.widget.scroller.HeadZoomScrollView>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:id="@id/topbar_left_ll" android:clickable="true" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" style="@style/topbar_icon_style">
+        <ImageView android:id="@id/topbar_left_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:id="@id/topbar_left_title" android:visibility="gone" android:layout_marginLeft="@dimen/activity_horizontal_margin" style="@style/topbar_subtitle_style" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/topbar_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:singleLine="true" android:layout_centerHorizontal="true" android:textIsSelectable="true" />
+    <LinearLayout android:gravity="center|right" android:id="@id/topbar_right_ll" android:clickable="true" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_alignParentRight="true" style="@style/topbar_icon_style">
+        <ImageView android:id="@id/topbar_right_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:id="@id/topbar_right_title" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_alignParentRight="true" style="@style/topbar_subtitle_style" />
+</RelativeLayout>

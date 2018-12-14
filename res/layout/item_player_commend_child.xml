@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_player_commend_item_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/header_img" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/iv_player_commend_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电影狂人" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/iv_player_commend_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="1小时前" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_player_commend_item_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_centerVertical="true">
+                        <ImageView android:id="@id/iv_player_commend_item_up_icon" android:layout_width="18.0sp" android:layout_height="18.0dip" android:src="@mipmap/icon_video_like" android:scaleType="fitXY" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/content_tag" android:id="@id/iv_player_commend_item_up_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="20" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_player_commend_item_commend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <TextView android:textColor="@color/themeColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="回复" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff777777" android:id="@id/tv_player_commend_item_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="2018年最近很火的一段话：“跟谁在一起舒服就和谁在一起，包括朋友、亲人。觉得累了就躲远一点..." />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/v_bottom_line" android:background="@color/grey_e8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

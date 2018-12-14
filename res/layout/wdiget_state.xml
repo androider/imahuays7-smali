@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_state_no_network" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/illustration_missioncenter_wanglu" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/grey_99" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="网络异常，请重新尝试" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_no_net_work" android:background="@drawable/login_btn_red" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="45.0dip" android:text="点击重试" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_state_no_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_no_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/illustration_myrecord_nosignal" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/grey_99" android:gravity="center" android:id="@id/tv_no_result_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="您暂时没有邀请好友呢" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_no_invite" android:background="@drawable/login_btn_red" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="75.0dip" android:text="邀请好友" />
+    </LinearLayout>
+</RelativeLayout>

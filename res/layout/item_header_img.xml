@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mh.movie.core.mvp.ui.widget.MyRelativeLayout android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/cb_header_img" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@null" />
+    <ImageView android:id="@id/iv_select_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="#90000000" />
+    <ImageView android:id="@id/iv_header_select" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/header_img_select" android:scaleType="fitXY" android:layout_centerInParent="true" />
+</com.mh.movie.core.mvp.ui.widget.MyRelativeLayout>

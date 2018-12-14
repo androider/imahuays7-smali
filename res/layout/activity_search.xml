@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_top" android:background="@color/themeColor" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <LinearLayout android:gravity="center|left" android:id="@id/topbar_left_ll" android:clickable="true" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" style="@style/topbar_icon_style">
+            <ImageView android:id="@id/topbar_left_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_back" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/search_bg" android:paddingLeft="17.0dip" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@mipmap/ico_homepage_nav_search" />
+            <EditText android:textSize="16.0dip" android:textColor="@color/white" android:textColorHint="#ffe69fa9" android:gravity="left" android:id="@id/et_search_input" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="想看什么" android:maxLines="1" android:maxLength="15" android:layout_weight="1.0" android:inputType="textNoSuggestions" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/white_cursor" />
+            <ImageView android:id="@id/iv_search_cancel" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="30.0dip" android:src="@mipmap/main_search_cancel" android:scaleType="center" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/tv_search_start" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/linear_search" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/linear_search_history" android:paddingTop="24.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/text_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="搜索历史" android:layout_weight="1.0" />
+                            <TextView android:textSize="12.0dip" android:textColor="@color/text_66" android:gravity="center_vertical" android:id="@id/iv_search_history_del" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="清空" android:drawableRight="@mipmap/main_del" />
+                        </LinearLayout>
+                        <com.mh.movie.core.mvp.ui.widget.LabelsView android:id="@id/labels" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:minHeight="25.0dip" app:labelBackground="@drawable/label_bg" app:labelTextColor="@drawable/label_text_color" app:labelTextPaddingBottom="5.0dip" app:labelTextPaddingLeft="8.0dip" app:labelTextPaddingRight="8.0dip" app:labelTextPaddingTop="5.0dip" app:labelTextSize="12.0dip" app:lineMargin="15.0dip" app:maxSelect="0" app:selectType="NONE" app:wordMargin="10.0dip" />
+                        <View android:background="@color/page_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/linear_search_hot" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <android.support.design.widget.TabLayout android:id="@id/tl_tab_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabIndicatorHeight="0.0dip" app:tabMaxWidth="200.0dip" app:tabMinWidth="50.0dip" app:tabMode="scrollable" app:tabSelectedTextColor="@color/themeColor" app:tabTextAppearance="@style/TabLayoutTextSize" app:tabTextColor="@color/text_66" />
+                        <com.mh.movie.core.mvp.ui.widget.ControlScrollViewPager android:id="@id/vp_search_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:overScrollMode="never" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <LinearLayout android:id="@id/ll_search_suggestion" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/rv_search_suggestion" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.mh.movie.core.mvp.ui.widget.StateView android:id="@id/sv_state_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_search_result" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.mh.movie.core.mvp.ui.widget.LoadMoreWrapper android:id="@id/recycler_search_result" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.mh.movie.core.mvp.ui.widget.StateView android:id="@id/sv_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

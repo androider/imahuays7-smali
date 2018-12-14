@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_f5_f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="false" app:left_icon="@mipmap/ico_nav_back_red" app:right_icon="@null" app:right_text="" app:title="绑定支付宝" app:title_color="@color/black" app:topbar_color="@color/color_f5_f7" app:topbar_transparent="false" />
+    <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="8.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账\u0009\u0009\u0009号" />
+        <EditText android:textSize="16.0dip" android:textColor="@color/text_22" android:textColorHint="#ffc4c4c7" android:id="@id/et_bind_account" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:hint="请输入支付宝账号" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="1.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="姓\u0009\u0009\u0009名" />
+        <EditText android:textSize="16.0dip" android:textColor="@color/text_22" android:textColorHint="#ffc4c4c7" android:id="@id/et_bind_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:hint="请输入姓名" android:maxLines="1" />
+    </LinearLayout>
+    <TextView android:enabled="false" android:textSize="18.0dip" android:textColor="@color/get_money_selector" android:gravity="center" android:id="@id/tv_get_money_submit" android:background="@drawable/get_money_btn" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="16.0dip" android:text="绑定支付宝" />
+</LinearLayout>

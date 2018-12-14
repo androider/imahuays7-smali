@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@mipmap/indictor_select" />
+    <item>
+        <shape android:shape="oval">
+            <size android:height="3.0dip" android:width="3.0dip" />
+            <solid android:color="#ffb1b1b1" />
+        </shape>
+    </item>
+</selector>

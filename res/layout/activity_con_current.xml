@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:title="同时缓存个数" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rl_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/content_h1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="20.0dip" android:text="温馨提示 :" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/grey_99" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin" android:text="请根据网络状态 , 选择同时缓存视频个数\n\n1.网速较好 , 推荐使用2-3个 , 享受多个视频同时告诉缓存。\n\n2.网速不佳，推荐选择1个 , 集中网速帮助单个视频更快下完。" />
+</LinearLayout>

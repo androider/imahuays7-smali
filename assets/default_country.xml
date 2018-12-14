@@ -1,0 +1,279 @@
+<countrylist>
+    <group sort="A">
+        <country name="afghanistan">93,9,Afghanistan</country>
+        <country name="åland islands">358,6,Åland Islands</country>
+        <country name="albania">355,9,Albania</country>
+        <country name="algeria">213,9,Algeria</country>
+        <country name="american samoa">1684,7,American Samoa</country>
+        <country name="andorra">376,6,Andorra</country>
+        <country name="angola">244,9,Angola</country>
+        <country name="anguilla">1264,7,Anguilla</country>
+        <country name="antigua &amp; barbuda">1268,7,Antigua &amp; Barbuda</country>
+        <country name="argentina">54,6,Argentina</country>
+        <country name="armenia">374,8,Armenia</country>
+        <country name="aruba">297,7,Aruba</country>
+        <country name="australia">61,9,Australia</country>
+        <country name="austria">43,10,Austria</country>
+        <country name="azerbaijan">994,9,Azerbaijan</country>
+    </group>
+    <group sort="B">
+        <country name="bahamas">,7,Bahama1242s</country>
+        <country name="bahrain">973,8,Bahrain</country>
+        <country name="bangladesh">880,9,Bangladesh</country>
+        <country name="barbados">1246,7,Barbados</country>
+        <country name="belarus">375,9,Belarus</country>
+        <country name="belgium">32,9,Belgium</country>
+        <country name="belize">501,7,Belize</country>
+        <country name="benin">229,8,Benin</country>
+        <country name="bermuda">1441,7,Bermuda</country>
+        <country name="bhutan">975,8,Bhutan</country>
+        <country name="bolivia">591,8,Bolivia</country>
+        <country name="bosnia &amp; herzegovina">387,8,Bosnia &amp; Herzegovina</country>
+        <country name="botswana">267,8,Botswana</country>
+        <country name="brazil">55,11,Brazil</country>
+        <country name="brunei darussalam">673,7,Brunei Darussalam</country>
+        <country name="bulgaria">359,9,Bulgaria</country>
+        <country name="burkina faso">226,8,Burkina Faso</country>
+        <country name="burundi">257,8,Burundi</country>
+    </group>
+    <group sort="C">
+        <country name="cambodia">855,9,Cambodia</country>
+        <country name="cameroon">237,8,Cameroon</country>
+        <country name="canada">1,10,Canada</country>
+        <country name="cape verde">238,7,Cape Verde</country>
+        <country name="cayman islands">1345,7,Cayman Islands</country>
+        <country name="central african rep.">236,8,Central African Rep.</country>
+        <country name="chad">235,8,Chad</country>
+        <country name="chile">56,9,Chile</country>
+        <country name="china">86,11,China</country>
+        <country name="colombia">57,10,Colombia</country>
+        <country name="comoros">269,7,Comoros</country>
+        <country name="congo">243,9,Congo</country>
+        <country name="congo">242,9,Congo</country>
+        <country name="cook islands">682,5,Cook Islands</country>
+        <country name="costa rica">506,8,Costa Rica</country>
+        <country name="côte d'ivoire">225,8,Côte D'Ivoire</country>
+        <country name="croatia">385,9,Croatia</country>
+        <country name="cuba">53,8,Cuba</country>
+        <country name="cyprus">357,8,Cyprus</country>
+        <country name="czech republic">420,9,Czech Republic</country>
+    </group>
+    <group sort="D">
+        <country name="denmark">45,8,Denmark</country>
+        <country name="djibouti">253,8,Djibouti</country>
+        <country name="dominica">1767,7,Dominica</country>
+        <country name="dominican republic">1,10,Dominican Republic</country>
+    </group>
+    <group sort="E">
+        <country name="ecuador">593,9,Ecuador</country>
+        <country name="egypt">20,10,Egypt</country>
+        <country name="el salvador">503,8,El Salvador</country>
+        <country name="equatorial guinea">240,9,Equatorial Guinea</country>
+        <country name="eritrea">291,7,Eritrea</country>
+        <country name="estonia">372,8,Estonia</country>
+        <country name="ethiopia">251,9,Ethiopia</country>
+    </group>
+    <group sort="F">
+        <country name="falkland islands (malvinas)">500,5,Falkland Islands (Malvinas)</country>
+        <country name="faroe islands">298,6,Faroe Islands</country>
+        <country name="fiji">679,7,Fiji</country>
+        <country name="finland">358,10,Finland</country>
+        <country name="france">33,9,France</country>
+        <country name="french guiana">594,9,French Guiana</country>
+        <country name="french polynesia">689,6,French Polynesia</country>
+    </group>
+    <group sort="G">
+        <country name="gabon">241,8,Gabon</country>
+        <country name="gambia">220,7,Gambia</country>
+        <country name="georgia">995,9,Georgia</country>
+        <country name="germany">49,11,Germany</country>
+        <country name="ghana">233,9,Ghana</country>
+        <country name="gibraltar">350,8,Gibraltar</country>
+        <country name="greece">30,10,Greece</country>
+        <country name="greenland">299,6,Greenland</country>
+        <country name="grenada">1473,7,Grenada</country>
+        <country name="guadeloupe">590,9,Guadeloupe</country>
+        <country name="guam">1671,7,Guam</country>
+        <country name="guatemala">502,8,Guatemala</country>
+        <country name="guinea-bissau">245,7,Guinea-Bissau</country>
+        <country name="guinea">224,8,Guinea</country>
+        <country name="guyana">592,7,Guyana</country>
+    </group>
+    <group sort="H">
+        <country name="haiti">509,8,Haiti</country>
+        <country name="honduras">504,8,Honduras</country>
+        <country name="hong kong">852,8,Hong Kong</country>
+        <country name="hungary">36,9,Hungary</country>
+    </group>
+    <group sort="I">
+        <country name="iceland">354,7,Iceland</country>
+        <country name="india">91,10,India</country>
+        <country name="indonesia">62,9,Indonesia</country>
+        <country name="iran">98,10,Iran</country>
+        <country name="iraq">964,10,Iraq</country>
+        <country name="ireland">353,9,Ireland</country>
+        <country name="israel">972,9,Israel</country>
+        <country name="italy">39,10,Italy</country>
+    </group>
+    <group sort="J">
+        <country name="jamaica">1876,7,Jamaica</country>
+        <country name="japan">81,10,Japan</country>
+        <country name="jordan">962,9,Jordan</country>
+    </group>
+    <group sort="K">
+        <country name="kazakhstan">7,10,Kazakhstan</country>
+        <country name="kenya">254,9,Kenya</country>
+        <country name="kiribati">686,5,Kiribati</country>
+        <country name="korea">82,10,Korea</country>
+        <country name="kuwait">965,8,Kuwait</country>
+        <country name="kyrgyzstan">996,9,Kyrgyzstan</country>
+    </group>
+    <group sort="L">
+        <country name="lao people's democratic rep.">856,10,Lao People's Democratic Rep.</country>
+        <country name="latvia">371,8,Latvia</country>
+        <country name="lebanon">961,8,Lebanon</country>
+        <country name="lesotho">266,8,Lesotho</country>
+        <country name="liberia">231,8,Liberia</country>
+        <country name="libyan arab jamahiriya">218,9,Libyan Arab Jamahiriya</country>
+        <country name="liechtenstein">423,7,Liechtenstein</country>
+        <country name="lithuania">370,8,Lithuania</country>
+        <country name="luxembourg">352,9,Luxembourg</country>
+    </group>
+    <group sort="M">
+        <country name="macao">853,8,Macao</country>
+        <country name="macedonia">389,8,Macedonia</country>
+        <country name="madagascar">261,9,Madagascar</country>
+        <country name="malawi">265,9,Malawi</country>
+        <country name="malaysia">60,10,Malaysia</country>
+        <country name="maldives">960,7,Maldives</country>
+        <country name="mali">223,8,Mali</country>
+        <country name="malta">356,8,Malta</country>
+        <country name="marshall islands">692,7,Marshall Islands</country>
+        <country name="martinique">596,9,Martinique</country>
+        <country name="mauritania">222,8,Mauritania</country>
+        <country name="mauritius">230,7,Mauritius</country>
+        <country name="mayotte">269,9,Mayotte</country>
+        <country name="mexico">52,11,Mexico</country>
+        <country name="micronesia">691,7,Micronesia</country>
+        <country name="moldova">373,8,Moldova</country>
+        <country name="monaco">377,9,Monaco</country>
+        <country name="mongolia">976,8,Mongolia</country>
+        <country name="montenegro">382,8,Montenegro</country>
+        <country name="montserrat">1664,7,Montserrat</country>
+        <country name="morocco">212,9,Morocco</country>
+        <country name="mozambique">258,9,Mozambique</country>
+        <country name="myanmar">95,8,Myanmar</country>
+    </group>
+    <group sort="N">
+        <country name="namibia">264,9,Namibia</country>
+        <country name="nauru">674,7,Nauru</country>
+        <country name="nepal">977,10,Nepal</country>
+        <country name="netherlands">31,9,Netherlands</country>
+        <country name="new caledonia">687,6,New Caledonia</country>
+        <country name="new zealand">64,8,New Zealand</country>
+        <country name="nicaragua">505,8,Nicaragua</country>
+        <country name="niger">227,8,Niger</country>
+        <country name="nigeria">234,10,Nigeria</country>
+        <country name="niue">683,4,Niue</country>
+        <country name="norfolk island">672,5,Norfolk Island</country>
+        <country name="northern mariana islands">1670,7,Northern Mariana Islands</country>
+        <country name="norway">47,8,Norway</country>
+    </group>
+    <group sort="O">
+        <country name="oman">968,8,Oman</country>
+    </group>
+    <group sort="P">
+        <country name="pakistan">92,10,Pakistan</country>
+        <country name="palau">680,7,Palau</country>
+        <country name="palestinian">970,9,Palestinian</country>
+        <country name="panama">507,8,Panama</country>
+        <country name="papua new guinea">675,8,Papua New Guinea</country>
+        <country name="paraguay">595,9,Paraguay</country>
+        <country name="peru">51,9,Peru</country>
+        <country name="philippines">63,10,Philippines</country>
+        <country name="poland">48,9,Poland</country>
+        <country name="portugal">351,9,Portugal</country>
+        <country name="puerto rico">1,10,Puerto Rico</country>
+    </group>
+    <group sort="Q">
+        <country name="qatar">974,8,Qatar</country>
+    </group>
+    <group sort="R">
+        <country name="réunion">262,9,Réunion</country>
+        <country name="romania">40,9,Romania</country>
+        <country name="russian federation">7,10,Russian Federation</country>
+        <country name="rwanda">250,9,Rwanda</country>
+    </group>
+    <group sort="S">
+        <country name="saint helena">290,4,Saint Helena</country>
+        <country name="saint kitts &amp; nevis">1869,7,Saint Kitts &amp; Nevis</country>
+        <country name="saint lucia">1758,7,Saint Lucia</country>
+        <country name="saint pierre &amp; miquelon">508,6,Saint Pierre &amp; Miquelon</country>
+        <country name="saint vincent &amp; the grenedines">1784,7,Saint Vincent &amp; The Grenedines</country>
+        <country name="samoa">685,7,Samoa</country>
+        <country name="san marino">378,10,San Marino</country>
+        <country name="sao tome &amp; principe">239,7,Sao Tome &amp; Principe</country>
+        <country name="saudi arabia">966,9,Saudi Arabia</country>
+        <country name="senegal">221,9,Senegal</country>
+        <country name="serbia">381,9,Serbia</country>
+        <country name="seychelles">248,7,Seychelles</country>
+        <country name="sierra leone">232,8,Sierra Leone</country>
+        <country name="singapore">65,8,Singapore</country>
+        <country name="sint maarten">1721,7,Sint Maarten</country>
+        <country name="slovakia">421,9,Slovakia</country>
+        <country name="slovenia">386,8,Slovenia</country>
+        <country name="solomon islands">677,7,Solomon Islands</country>
+        <country name="somalia">252,8,Somalia</country>
+        <country name="south africa">27,9,South Africa</country>
+        <country name="spain">34,9,Spain</country>
+        <country name="sri lanka">94,9,Sri Lanka</country>
+        <country name="sudan">249,9,Sudan</country>
+        <country name="suriname">597,7,Suriname</country>
+        <country name="svalbard &amp; jan mayen">47,8,Svalbard &amp; Jan Mayen</country>
+        <country name="sweden">46,9,Sweden</country>
+        <country name="switzerland">41,9,Switzerland</country>
+        <country name="syrian arab republic">963,9,Syrian Arab Republic</country>
+    </group>
+    <group sort="T">
+        <country name="taiwan">886,9,Taiwan</country>
+        <country name="tajikistan">992,9,Tajikistan</country>
+        <country name="tanzania">255,9,Tanzania</country>
+        <country name="thailand">66,9,Thailand</country>
+        <country name="timor-leste">670,8,Timor-Leste</country>
+        <country name="togo">228,8,Togo</country>
+        <country name="tokelau">690,4,Tokelau</country>
+        <country name="tonga">676,5,Tonga</country>
+        <country name="trinidad &amp; tobago">1868,7,Trinidad &amp; Tobago</country>
+        <country name="tunisia">216,8,Tunisia</country>
+        <country name="turkey">90,10,Turkey</country>
+        <country name="turkmenistan">993,8,Turkmenistan</country>
+        <country name="turks &amp; caicos islands">1649,7,Turks &amp; Caicos Islands</country>
+        <country name="tuvalu">688,5,Tuvalu</country>
+    </group>
+    <group sort="U">
+        <country name="uganda">256,9,Uganda</country>
+        <country name="ukraine">380,9,Ukraine</country>
+        <country name="united arab emirates">971,9,United Arab Emirates</country>
+        <country name="united kingdom">44,10,United Kingdom</country>
+        <country name="united states">1,10,United States</country>
+        <country name="uruguay">598,8,Uruguay</country>
+        <country name="uzbekistan">998,9,Uzbekistan</country>
+    </group>
+    <group sort="V">
+        <country name="vanuatu">678,7,Vanuatu</country>
+        <country name="venezuela">58,10,Venezuela</country>
+        <country name="viet nam">84,10,Viet Nam</country>
+        <country name="virgin islands british">1284,7,Virgin Islands British</country>
+        <country name="virgin islands u.s.">1340,7,Virgin Islands U.S.</country>
+    </group>
+    <group sort="W">
+        <country name="wallis &amp; futuna">681,6,Wallis &amp; Futuna</country>
+    </group>
+    <group sort="Y">
+        <country name="yemen">967,9,Yemen</country>
+    </group>
+    <group sort="Z">
+        <country name="zambia">260,9,Zambia</country>
+        <country name="zimbabwe">263,9,Zimbabwe</country>
+    </group>
+</countrylist>

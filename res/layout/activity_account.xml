@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/my_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:right_icon="@null" app:title="账号安全中心" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_account_tel" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+        <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="绑定手机" />
+        <TextView android:textColor="@color/grey_99" android:gravity="right" android:id="@id/tv_account_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="155****5555" android:drawablePadding="8.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_account_pwd" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+        <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改密码" />
+        <TextView android:textColor="@color/grey_99" android:gravity="right" android:id="@id/tv_setting_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@mipmap/icon_go" android:drawablePadding="8.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

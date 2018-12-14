@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_share_item" android:layout_width="80.0pt" android:layout_height="71.0pt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_share_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_share_wechat" />
+    <TextView android:textSize="12.0pt" android:textColor="#ffcccccc" android:id="@id/tv_share_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0pt" android:text="@string/share_wechat" />
+</LinearLayout>

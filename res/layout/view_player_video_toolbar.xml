@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_player_toolbar" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/back" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="5.0dip" android:src="@mipmap/player_return" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/icon_video_play02" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:id="@id/play_topbar_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="用流量播放 999 M" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

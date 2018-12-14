@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="67.0dip">
+        <ImageView android:id="@id/iv_changed_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_redemptioncenter_screening" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true">
+                <TextView android:textSize="15.0dip" android:textColor="@color/text_33" android:id="@id/tv_exchange_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="使用投屏功能观看麻花视频" android:layout_weight="1.0" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="13.0dip" android:textColor="@color/yellow_ff" android:id="@id/tv_exchange_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="50麻花币" />
+                    <TextView android:textSize="13.0dip" android:textColor="@color/grey_99" android:id="@id/tv_exchange_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="有效期：永久" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textColor="@color/themeColor" android:gravity="center" android:id="@id/tv_exchange_action" android:background="@drawable/corner_btn_grey_bg" android:layout_width="88.0dip" android:layout_height="32.0dip" android:text="永久有效" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:id="@id/v_line" android:background="@color/grey_e8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

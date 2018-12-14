@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_detail_player" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:id="@id/post_detail_nested_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/post_media_height" />
+            <TextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/detail_text" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <com.mh.movie.core.mvp.ui.activity.player.LandLayoutVideo android:id="@id/detail_player" android:layout_width="fill_parent" android:layout_height="@dimen/post_media_height" />
+</RelativeLayout>

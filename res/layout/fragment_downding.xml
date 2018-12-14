@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mh.movie.core.mvp.ui.widget.LoadMoreWrapper android:id="@id/wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/fl_operator" />
+    <FrameLayout android:id="@id/fl_operator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_operator" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="51.0dip">
+            <View android:background="@color/my_bg_color" android:layout_width="fill_parent" android:layout_height="0.75dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerHorizontal="true">
+                <TextView android:textSize="14.0sp" android:textColor="@color/content_h1" android:gravity="center" android:id="@id/tv_selected_all" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="全选" android:layout_weight="1.0" />
+                <View android:background="@color/my_bg_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="17.0dip" android:layout_marginBottom="17.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/grey_99" android:gravity="center" android:id="@id/tv_delete" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="删除" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_operator2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_space_text" android:background="#66000000" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="已占用87.49 MB/剩余32.68 GB" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerHorizontal="true">
+                <FrameLayout android:id="@id/ll_start_all" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/content_h1" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_start_all" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="全部开始" android:drawableLeft="@mipmap/downpic" android:drawablePadding="5.0dip" />
+                </FrameLayout>
+                <View android:background="@color/my_bg_color" android:visibility="visible" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="17.0dip" android:layout_marginBottom="17.0dip" />
+                <FrameLayout android:id="@id/ll_sync_cache" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/content_h1" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_sync_cache" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="同时缓存个数(2)" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

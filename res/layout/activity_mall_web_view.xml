@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:title="@string/mall" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/pb_webview" android:layout_width="fill_parent" android:layout_height="1.5dip" android:max="100" style="?android:progressBarStyleHorizontal" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:layout_gravity="center" android:id="@id/loading" android:background="@drawable/round_semi__bg" android:layout_width="48.0dip" android:layout_height="48.0dip">
+                <com.wang.avi.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/avi" android:layout_width="wrap_content" android:layout_height="wrap_content" app:indicatorName="LineSpinFadeLoaderIndicator" style="@style/AVLoadingIndicatorView.Small" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <com.mh.movie.core.mvp.ui.widget.StateView android:id="@id/sv_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

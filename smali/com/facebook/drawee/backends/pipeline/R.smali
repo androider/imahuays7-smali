@@ -1,0 +1,13 @@
+.class public final Lcom/facebook/drawee/backends/pipeline/R;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/facebook/drawee/backends/pipeline/R$styleable;,
+        Lcom/facebook/drawee/backends/pipeline/R$id;,
+        Lcom/facebook/drawee/backends/pipeline/R$attr;
+    }
+.end annotation

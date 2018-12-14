@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_loading_for_more" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:id="@id/selected_loading_tag" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_66" android:id="@id/selected_for_more" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载更多的数据..." />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="12.0sp" android:textColor="@color/grey_99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="已经全部加载完毕" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

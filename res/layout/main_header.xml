@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.bingoogolapple.bgabanner.BGABanner android:id="@id/b_main_movie" android:layout_width="fill_parent" android:layout_height="wrap_content" app:banner_indicatorGravity="right" app:banner_isNeedShowIndicatorOnOnlyOnePage="true" app:banner_pointContainerBackground="@mipmap/banner_shadow_bg" app:banner_pointDrawable="@drawable/banner_drawable" app:banner_pointTopBottomMargin="1.0dip" app:banner_tipTextColor="@color/white" app:banner_tipTextSize="16.0dip" />
+</RelativeLayout>

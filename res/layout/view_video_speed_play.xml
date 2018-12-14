@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_video_speed_bit_contains" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="26.0sp" android:textColor="@color/orange_ff4f66" android:gravity="center" android:id="@id/tv_video_speed_bit_one" android:background="@drawable/border_4_empty_orange" android:clickable="true" android:layout_width="106.0dip" android:layout_height="40.0dip" android:layout_marginLeft="24.0dip" android:text="1.0x" />
+    <TextView android:textSize="26.0sp" android:textColor="@color/grey_eee" android:gravity="center" android:id="@id/tv_video_speed_bit_two" android:background="@drawable/border_4_empty_gray" android:layout_width="106.0dip" android:layout_height="40.0dip" android:layout_marginLeft="24.0dip" android:text="1.25x" />
+    <TextView android:textSize="26.0sp" android:textColor="@color/grey_eee" android:gravity="center" android:id="@id/tv_video_speed_bit_three" android:background="@drawable/border_4_empty_gray" android:clickable="true" android:layout_width="106.0dip" android:layout_height="40.0dip" android:layout_marginLeft="24.0dip" android:text="1.5x" />
+    <TextView android:textSize="26.0sp" android:textColor="@color/grey_eee" android:gravity="center" android:id="@id/tv_video_speed_bit_four" android:background="@drawable/border_4_empty_gray" android:clickable="true" android:layout_width="106.0dip" android:layout_height="40.0dip" android:layout_marginLeft="24.0dip" android:text="2.0x" />
+</LinearLayout>

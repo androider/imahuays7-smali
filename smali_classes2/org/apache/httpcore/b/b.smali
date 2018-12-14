@@ -1,0 +1,133 @@
+.class public final Lorg/apache/httpcore/b/b;
+.super Ljava/lang/Object;
+.source "ConnSupport.java"
+
+
+# direct methods
+.method public static a(Lorg/apache/httpcore/a/a;)Ljava/nio/charset/CharsetDecoder;
+    .locals 3
+
+    const/4 v0, 0x0
+
+    if-nez p0, :cond_0
+
+    return-object v0
+
+    .line 47
+    :cond_0
+    invoke-virtual {p0}, Lorg/apache/httpcore/a/a;->c()Ljava/nio/charset/Charset;
+
+    move-result-object v1
+
+    .line 48
+    invoke-virtual {p0}, Lorg/apache/httpcore/a/a;->d()Ljava/nio/charset/CodingErrorAction;
+
+    move-result-object v2
+
+    .line 49
+    invoke-virtual {p0}, Lorg/apache/httpcore/a/a;->e()Ljava/nio/charset/CodingErrorAction;
+
+    move-result-object p0
+
+    if-eqz v1, :cond_3
+
+    .line 51
+    invoke-virtual {v1}, Ljava/nio/charset/Charset;->newDecoder()Ljava/nio/charset/CharsetDecoder;
+
+    move-result-object v0
+
+    if-eqz v2, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    sget-object v2, Ljava/nio/charset/CodingErrorAction;->REPORT:Ljava/nio/charset/CodingErrorAction;
+
+    .line 52
+    :goto_0
+    invoke-virtual {v0, v2}, Ljava/nio/charset/CharsetDecoder;->onMalformedInput(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;
+
+    move-result-object v0
+
+    if-eqz p0, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    sget-object p0, Ljava/nio/charset/CodingErrorAction;->REPORT:Ljava/nio/charset/CodingErrorAction;
+
+    .line 53
+    :goto_1
+    invoke-virtual {v0, p0}, Ljava/nio/charset/CharsetDecoder;->onUnmappableCharacter(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_3
+    return-object v0
+.end method
+
+.method public static b(Lorg/apache/httpcore/a/a;)Ljava/nio/charset/CharsetEncoder;
+    .locals 2
+
+    const/4 v0, 0x0
+
+    if-nez p0, :cond_0
+
+    return-object v0
+
+    .line 63
+    :cond_0
+    invoke-virtual {p0}, Lorg/apache/httpcore/a/a;->c()Ljava/nio/charset/Charset;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_3
+
+    .line 65
+    invoke-virtual {p0}, Lorg/apache/httpcore/a/a;->d()Ljava/nio/charset/CodingErrorAction;
+
+    move-result-object v0
+
+    .line 66
+    invoke-virtual {p0}, Lorg/apache/httpcore/a/a;->e()Ljava/nio/charset/CodingErrorAction;
+
+    move-result-object p0
+
+    .line 67
+    invoke-virtual {v1}, Ljava/nio/charset/Charset;->newEncoder()Ljava/nio/charset/CharsetEncoder;
+
+    move-result-object v1
+
+    if-eqz v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    sget-object v0, Ljava/nio/charset/CodingErrorAction;->REPORT:Ljava/nio/charset/CodingErrorAction;
+
+    .line 68
+    :goto_0
+    invoke-virtual {v1, v0}, Ljava/nio/charset/CharsetEncoder;->onMalformedInput(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetEncoder;
+
+    move-result-object v0
+
+    if-eqz p0, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    sget-object p0, Ljava/nio/charset/CodingErrorAction;->REPORT:Ljava/nio/charset/CodingErrorAction;
+
+    .line 69
+    :goto_1
+    invoke-virtual {v0, p0}, Ljava/nio/charset/CharsetEncoder;->onUnmappableCharacter(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetEncoder;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_3
+    return-object v0
+.end method

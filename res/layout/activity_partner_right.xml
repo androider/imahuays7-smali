@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:background="@color/white" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="false" app:left_icon="@mipmap/ico_nav_back_red" app:right_icon="@null" app:right_text="兑换纪录" app:title="合伙人特权" app:title_color="@color/black" app:topbar_color="@color/white" app:topbar_transparent="false" />
+    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/partner_right_bg_1" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="247.0dip">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@mipmap/partner_right_bg_2" android:layout_width="351.0dip" android:layout_height="319.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="99.0dip">
+                        <ImageView android:id="@id/iv_qrcode" android:background="@mipmap/partner_right_bg_4" android:padding="4.0dip" android:layout_width="122.0dip" android:layout_height="122.0dip" android:layout_marginLeft="30.0dip" />
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/tv_system_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="分享下载麻花影视\n分红一网打尽" />
+                            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/tv_system_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/partner_right_tips" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:id="@id/iv_share_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/btn_partener_right_share" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@mipmap/partner_right_bg_3" android:paddingLeft="21.0dip" android:paddingRight="21.0dip" android:layout_width="341.0dip" android:layout_height="498.0dip" android:layout_marginTop="49.0dip">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/text_partner_tips" android:background="@mipmap/partner_right_bg_5" android:paddingLeft="29.0dip" android:paddingTop="22.0dip" android:paddingRight="29.0dip" android:paddingBottom="22.0dip" android:layout_width="fill_parent" android:layout_height="212.0dip" android:layout_marginTop="84.0dip" android:text="@string/partner_right_tips_2" android:lineSpacingExtra="4.0dip" />
+                    <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/rv_partner_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/text_partner_tips" android:layout_gravity="center_horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/partner_right_tips_3" />
+                </LinearLayout>
+                <TextView android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_partner_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.0dip" android:text="返回查看分红" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

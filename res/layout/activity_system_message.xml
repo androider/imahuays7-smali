@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:right_icon="@null" app:title="系统消息" />
+    <com.mh.movie.core.mvp.ui.widget.MultiStateView android:id="@id/mv_state" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" app:msv_emptyView="@layout/empty_view" app:msv_errorView="@layout/error_view" app:msv_loadingView="@layout/loading_view" app:msv_viewState="loading">
+        <android.support.v7.widget.RecyclerView android:id="@id/lmw_message_system" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.mh.movie.core.mvp.ui.widget.MultiStateView>
+</LinearLayout>

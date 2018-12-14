@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_video_jump_play" android:background="@drawable/player_video_play_last_local" android:layout_width="wrap_content" android:layout_height="35.0dip">
+        <ImageView android:id="@id/iv_video_jump_play_close" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:src="@mipmap/player_memory_close" android:scaleType="center" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffd1d1d1" android:id="@id/tv_video_jump_play_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="上次看到：" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffd1d1d1" android:id="@id/tv_video_jump_play_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01:30:50" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffff0000" android:gravity="center" android:id="@id/tv_video_jump_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="15.0dip" android:text="跳转播放" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffd1d1d1" android:id="@id/tv_blu_ray_watch_minutes" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="试看10分钟，" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffff0000" android:id="@id/tv_blu_ray_watch_full" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="点击观看完整版" />
+    </LinearLayout>
+</LinearLayout>

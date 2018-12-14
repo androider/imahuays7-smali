@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/content_h1" android:gravity="center_vertical" android:id="@id/tv_country" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="国家代码" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/themeColor" android:gravity="center" android:id="@id/tv_country_num" android:background="@mipmap/login_add_ct_num" android:layout_width="62.0dip" android:layout_height="58.0dip" android:text="+86" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/grey_cc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <EditText android:textSize="13.0sp" android:textColor="@color/black" android:textColorHint="@color/grey_99" android:layout_gravity="center_vertical" android:id="@id/et_phone_num" android:background="@null" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="请输入手机号" android:maxLength="11" android:inputType="numberDecimal" android:textCursorDrawable="@null" />
+            <ImageButton android:layout_gravity="center|right" android:id="@id/ib_clear_all" android:background="@null" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:src="@mipmap/login_phone_num_clear" />
+            <View android:layout_gravity="bottom" android:background="@color/grey_cc" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.mh.movie.core.mvp.ui.widget.ExpandableLayout android:orientation="vertical" android:id="@id/rl_invitation_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+        <LinearLayout android:orientation="horizontal" android:id="@id/collapse_value" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/themeColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邀请码（选填）" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@mipmap/icon_arrow_gray_down" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/expand_value" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="59.0dip">
+            <FrameLayout android:id="@id/left" android:layout_width="62.0dip" android:layout_height="58.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="13.0dip" android:layout_height="16.0dip" android:src="@mipmap/icon_regist_" />
+            </FrameLayout>
+            <EditText android:textSize="13.0sp" android:textColor="@color/black" android:textColorHint="@color/grey_99" android:id="@id/et_invitation_code" android:background="@null" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="58.0dip" android:hint="请输入邀请码" android:maxLength="5" android:layout_toRightOf="@id/left" android:layout_centerVertical="true" android:inputType="text" android:textCursorDrawable="@null" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/ib_clear_code" android:padding="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:src="@mipmap/login_phone_num_clear" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="@color/grey_cc" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </com.mh.movie.core.mvp.ui.widget.ExpandableLayout>
+    <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_login" android:background="@drawable/login_btn_red" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="28.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="28.0dip" android:text="下一步" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="38.0dip" android:layout_marginTop="5.0dip">
+        <FrameLayout android:id="@id/fl_agreement" android:layout_width="45.0dip" android:layout_height="40.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/cb_agreement" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@mipmap/login_checkbox_selected" />
+        </FrameLayout>
+        <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:id="@id/tv_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

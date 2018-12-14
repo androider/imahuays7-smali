@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:background="@color/white" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="false" app:left_icon="@mipmap/ico_nav_back_red" app:right_icon="@null" app:right_text="兑换纪录" app:title="推广详情" app:title_color="@color/black" app:topbar_color="@color/white" app:topbar_transparent="false" />
+    <View android:background="@color/grey_db_80" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <com.mh.movie.core.mvp.ui.widget.RecyclerWrapper android:id="@id/rw_partner_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

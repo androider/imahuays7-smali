@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="false" app:right_icon="@null" app:title="任务中心" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:background="@mipmap/background_missioncenter_money" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="91.0dip">
+                <LinearLayout android:gravity="center" android:id="@id/ll_task_invite" android:background="@drawable/my_login_btn_bg" android:layout_width="125.0dip" android:layout_height="36.0dip" android:layout_marginRight="15.0dip">
+                    <TextView android:textSize="13.0dip" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的邀请" android:drawableLeft="@mipmap/icon_missioncenter_invite" android:drawablePadding="6.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/ll_task_exchange" android:background="@drawable/my_login_btn_bg" android:layout_width="125.0dip" android:layout_height="36.0dip" android:layout_marginLeft="15.0dip">
+                    <TextView android:textSize="13.0dip" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="兑换中心" android:drawableLeft="@mipmap/icon__missioncenter_exchange" android:drawablePadding="6.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="88.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="7.0dip">
+                    <com.mh.movie.core.mvp.ui.widget.SignedView android:id="@id/sv_signed" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <android.support.v4.widget.NestedScrollView android:id="@id/nest_scroller_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/text_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日常任务" />
+                        </LinearLayout>
+                        <android.support.v7.widget.RecyclerView android:id="@id/rv_task_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+        </LinearLayout>
+        <com.mh.movie.core.mvp.ui.widget.StateView android:id="@id/sv_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="150.0dip" />
+    </RelativeLayout>
+</LinearLayout>

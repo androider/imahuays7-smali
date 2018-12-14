@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mh.movie.core.mvp.ui.widget.MultiStateView android:id="@id/mv_state" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" app:msv_emptyView="@layout/empty_view" app:msv_errorView="@layout/error_view" app:msv_loadingView="@layout/loading_view" app:msv_viewState="loading"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+</com.mh.movie.core.mvp.ui.widget.MultiStateView>

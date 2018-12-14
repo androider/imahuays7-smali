@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="284.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_dialog_title" android:background="@mipmap/background_vip_backgroundpopup" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="温馨提示" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/corner_bottom_white_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_22" android:gravity="center" android:id="@id/tv_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="分享到朋友圈，您即可观看完整版" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/grey_99" android:gravity="center" android:id="@id/tv_dialog_message2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="被邀请的好友注册后，也可观看一部完整版热门影片" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_44" android:gravity="center" android:id="@id/tv_dialog_ok" android:layout_width="167.0dip" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="朋友圈" android:drawableTop="@mipmap/ic_share_moments" android:drawablePadding="4.0dip" />
+        <View android:background="@color/grey_db" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="24.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/grey_99" android:gravity="center" android:id="@id/tv_dialog_cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="取消" />
+    </LinearLayout>
+</LinearLayout>

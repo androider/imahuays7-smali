@@ -1,0 +1,18 @@
+{
+  "api_url": [
+    "http://**.**.com",
+    "http://**.**.com"
+  ],
+  "blog_url": ["https://****.myqcloud.com",
+    "https://****.github.io/mh-dddd",
+    "https://****.aliyuncs.com/***.html"
+  ],
+  "domain_url": [
+    "http://**.**.com",
+    "http://**.**.com"
+  ],
+  "encryption_url": [
+    "http://**.**.com",
+    "https://api.yiqihao.com/mobile/config"
+  ]
+}

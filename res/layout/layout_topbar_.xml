@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_left_" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageButton android:id="@id/topbar_left_icon" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="6.0dip" android:layout_width="wrap_content" style="@style/topbar_icon_style" />
+        <TextView android:id="@id/topbar_left_title" style="@style/topbar_subtitle_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <FrameLayout android:gravity="center" android:layout_width="40.0dip" android:layout_height="40.0dip">
+            <ImageButton android:id="@id/topbar_right_icon2" android:layout_width="wrap_content" android:layout_centerInParent="true" style="@style/topbar_icon_style" />
+            <ImageView android:id="@id/iv_message_new" android:visibility="visible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/red_yellow_point_bg" />
+        </FrameLayout>
+        <ImageButton android:id="@id/topbar_right_icon1" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" style="@style/topbar_icon_style" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_task_img" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginBottom="19.0dip" android:src="@mipmap/icon_missioncenter_invitefriends" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/text_33" android:id="@id/tv_task_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="title" />
+                    <TextView android:textSize="9.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_task_finish" android:background="@drawable/label_red_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="已完成" />
+                </LinearLayout>
+                <TextView android:textSize="13.0dip" android:textColor="@color/yellow_38" android:id="@id/tv_task_money" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="+100麻花币/个" android:drawableLeft="@mipmap/icon_missioncenter_money" android:drawablePadding="5.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:textColor="@color/themeColor" android:gravity="center" android:id="@id/tv_task_action" android:background="@drawable/main_task_button_bg" android:layout_width="88.0dip" android:layout_height="32.0dip" android:text="去邀请" />
+        </LinearLayout>
+        <TextView android:textSize="11.0dip" android:textColor="@color/grey_99" android:id="@id/tv_task_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="邀请好友注册并达到3级，获得100个麻花币" />
+        <View android:id="@id/v_line" android:background="@color/grey_e8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

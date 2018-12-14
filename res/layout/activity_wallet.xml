@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_e8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:title="麻花币记录" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@mipmap/background_myrecord_money" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="171.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="13.0dip" android:textColor="@color/grey_e3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="麻花币余额" />
+                <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="36.0dip" android:textColor="@color/grey_e3" android:id="@id/tv_money_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="10.0dip" android:src="@mipmap/icon_missioncenter_money" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentRight="true">
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_make_money" android:background="@drawable/my_login_btn_bg_1" android:layout_width="100.0dip" android:layout_height="36.0dip" android:text="去赚钱" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/record_list_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="-50.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip">
+            <com.mh.movie.core.mvp.ui.widget.RecyclerWrapper android:id="@id/recycler_money_record" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.mh.movie.core.mvp.ui.widget.StateView android:id="@id/sv_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView android:id="@id/nsv_scroller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@mipmap/pic_promotion_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="82.0dip">
+                        <TextView android:textColor="#ffa4201c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总计分红" />
+                        <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="1.0dip" android:text="¥" />
+                            <TextView android:textSize="40.0dip" android:textColor="@color/white" android:id="@id/tv_money_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1500" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="10.0dip" android:src="@mipmap/ico_promotion_gold" />
+                        </LinearLayout>
+                        <TextView android:gravity="center" android:id="@id/tv_partner_tixian" android:background="@drawable/get_money_bg" android:layout_width="88.0dip" android:layout_height="24.0dip" android:layout_marginTop="13.0dip" android:text="立即提现" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_lists" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16.0dip" android:textColor="@color/text_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="推广详情" android:layout_weight="1.0" />
+                            <TextView android:enabled="true" android:textSize="12.0dip" android:textColor="@color/partner_check_more" android:id="@id/tv_partner_show_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看全部" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="140.0dip">
+                            <android.support.v7.widget.RecyclerView android:id="@id/rv_lists" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                            <TextView android:textSize="11.0dip" android:textColor="@color/text_99" android:layout_gravity="center_horizontal" android:id="@id/tv_no_enough" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="暂无更多记录" android:drawableLeft="@drawable/line_no_data_tips" android:drawableRight="@drawable/line_no_data_tips" android:drawablePadding="8.0dip" />
+                            <LinearLayout android:orientation="vertical" android:id="@id/ll_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <ImageView android:layout_gravity="center_horizontal" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/pic_promotion_emptystates" android:scaleType="centerInside" android:layout_weight="1.0" />
+                                <TextView android:textSize="11.0dip" android:textColor="@color/text_99" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="暂无推广记录" android:drawableLeft="@drawable/line_no_data_tips" android:drawableRight="@drawable/line_no_data_tips" android:drawablePadding="8.0dip" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/grey_f5" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                    <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <android.support.v7.widget.RecyclerView android:id="@id/rv_partner_project" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.mh.movie.core.mvp.ui.widget.StateView android:id="@id/sv_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="150.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <RelativeLayout android:id="@id/rl_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/v_top_bg" android:background="@color/share_theme" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+        <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:right_icon="@null" app:title="麻花推广平台" app:topbar_transparent="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/themeColor" android:ellipsize="marquee" android:gravity="center" android:id="@id/tv_partner_notice" android:background="#fffff6e8" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="36.0dip" android:text="昨日最佳合伙人：138****323、 推广人数 123人、分红123。32元" android:singleLine="true" android:drawableLeft="@mipmap/ico_promotion_horn" android:drawablePadding="4.0dip" android:layout_alignParentBottom="true" android:marqueeRepeatLimit="marquee_forever" />
+</RelativeLayout>

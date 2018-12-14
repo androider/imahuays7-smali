@@ -1,0 +1,211 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: imahuays7.apk
+compressionType: false
+doNotCompress:
+- arsc
+- mp3
+- res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- png
+- res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- res/drawable-hdpi-v4/notification_bg_low_normal.9.png
+- res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
+- res/drawable-hdpi-v4/notification_bg_normal.9.png
+- res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
+- res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- res/drawable-mdpi-v4/notification_bg_low_normal.9.png
+- res/drawable-mdpi-v4/notification_bg_low_pressed.9.png
+- res/drawable-mdpi-v4/notification_bg_normal.9.png
+- res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png
+- res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-xhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- res/drawable-xhdpi-v4/notification_bg_low_normal.9.png
+- res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png
+- res/drawable-xhdpi-v4/notification_bg_normal.9.png
+- res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png
+- res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png
+- res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png
+- res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png
+- res/drawable-xxhdpi-v4/abc_list_pressed_holo_light.9.png
+- res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png
+- res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png
+- res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png
+- res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png
+- res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
+- res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png
+- gif
+- res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png
+- res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png
+- res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
+- res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png
+- res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
+- res/drawable/weibosdk_common_shadow_top.9.png
+- jpg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '18'
+  targetSdkVersion: '27'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  jetty-dir.css: '8'
+  miui_push_version: '8'
+  plugin.properties: '8'
+  push_version: '8'
+  about_files/LICENSE_CDDL.txt: '8'
+  javax/servlet/LocalStrings.properties: '8'
+  javax/servlet/LocalStrings_fr.properties: '8'
+  javax/servlet/LocalStrings_ja.properties: '8'
+  javax/servlet/http/LocalStrings.properties: '8'
+  javax/servlet/http/LocalStrings_es.properties: '8'
+  javax/servlet/http/LocalStrings_fr.properties: '8'
+  javax/servlet/http/LocalStrings_ja.properties: '8'
+  javax/servlet/resources/XMLSchema.dtd: '8'
+  javax/servlet/resources/datatypes.dtd: '8'
+  javax/servlet/resources/j2ee_1_4.xsd: '8'
+  javax/servlet/resources/j2ee_web_services_1_1.xsd: '8'
+  javax/servlet/resources/j2ee_web_services_client_1_1.xsd: '8'
+  javax/servlet/resources/javaee_5.xsd: '8'
+  javax/servlet/resources/javaee_6.xsd: '8'
+  javax/servlet/resources/javaee_web_services_1_2.xsd: '8'
+  javax/servlet/resources/javaee_web_services_1_3.xsd: '8'
+  javax/servlet/resources/javaee_web_services_client_1_2.xsd: '8'
+  javax/servlet/resources/javaee_web_services_client_1_3.xsd: '8'
+  javax/servlet/resources/web-app_2_2.dtd: '8'
+  javax/servlet/resources/web-app_2_3.dtd: '8'
+  javax/servlet/resources/web-app_2_4.xsd: '8'
+  javax/servlet/resources/web-app_2_5.xsd: '8'
+  javax/servlet/resources/web-app_3_0.xsd: '8'
+  javax/servlet/resources/web-common_3_0.xsd: '8'
+  javax/servlet/resources/web-fragment_3_0.xsd: '8'
+  javax/servlet/resources/xml.xsd: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+  org/eclipse/jetty/favicon.ico: '8'
+  org/eclipse/jetty/http/encoding.properties: '8'
+  org/eclipse/jetty/http/mime.properties: '8'
+  org/eclipse/jetty/http/useragents: '8'
+  org/eclipse/jetty/server/handler/jmx/AbstractHandler-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/ContextHandler-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/ContextHandlerCollection-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/HandlerCollection-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/HandlerWrapper-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/StatisticsHandler-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/AbstractConnector-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/Connector-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/Handler-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/HandlerContainer-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/NCSARequestLog-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/Server-mbean.properties: '8'
+  org/eclipse/jetty/server/nio/jmx/SelectChannelConnector-mbean.properties: '8'
+  org/eclipse/jetty/server/session/jmx/AbstractSessionManager-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/FilterMapping-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/Holder-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletContextHandler-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletHandler-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletHolder-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletMapping-mbean.properties: '8'
+  org/fourthline/cling/support/avtransport/metadata-1.0-avt.xsd: '8'
+  org/fourthline/cling/support/avtransport/metadata-1.01-avt.xsd: '8'
+  org/fourthline/cling/support/contentdirectory/descriptor/dc-elements-1.1.xsd: '8'
+  org/fourthline/cling/support/contentdirectory/descriptor/didl-lite-1.0.xsd: '8'
+  org/fourthline/cling/support/contentdirectory/descriptor/upnp-cds-1.0.xsd: '8'
+  org/fourthline/cling/support/renderingcontrol/metadata-1.0-rcs.xsd: '8'
+  org/seamless/schemas/xhtml1-strict.xsd: '8'
+  org/seamless/schemas/xml.xsd: '8'
+  org/seamless/swing/logging/img/configure.png: '0'
+  org/seamless/swing/logging/img/copyclipboard.png: '0'
+  org/seamless/swing/logging/img/debug.png: '0'
+  org/seamless/swing/logging/img/info.png: '0'
+  org/seamless/swing/logging/img/pause.png: '0'
+  org/seamless/swing/logging/img/removetext.png: '0'
+  org/seamless/swing/logging/img/trace.png: '0'
+  org/seamless/swing/logging/img/viewtext.png: '0'
+  org/seamless/swing/logging/img/warn.png: '0'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.4
+versionInfo:
+  versionCode: '20300'
+  versionName: 2.3.0

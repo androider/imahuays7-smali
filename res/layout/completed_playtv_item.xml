@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="92.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_ck" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:src="@mipmap/login_checkbox_normal" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/fl_poster" android:background="@mipmap/tv_item_bg" android:layout_width="110.0dip" android:layout_height="62.0dip" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_toRightOf="@id/iv_ck" android:layout_centerVertical="true">
+        <ImageView android:id="@id/iv_poster" android:background="@color/grey_75" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="1.0dip" android:src="@mipmap/logo_big" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="right" android:id="@id/iv_right" android:background="@mipmap/tv_item_pic" android:layout_width="28.0dip" android:layout_height="fill_parent" android:layout_marginTop="9.0dip" android:scaleType="centerInside" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@id/tv_num" android:layout_width="28.0dip" android:layout_height="27.0dip" android:layout_marginTop="9.0dip" android:text="12" android:singleLine="true" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/fl_poster" android:layout_centerVertical="true">
+        <TextView android:textColor="@color/content_h1" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="大圣归来: 大圣归来大圣归来大圣归来wewerwer" android:singleLine="true" />
+    </RelativeLayout>
+    <View android:background="@color/my_bg_color" android:layout_width="fill_parent" android:layout_height="0.75dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/my_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:right_icon="@null" app:title="设置" />
+    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/rl_setting_header" android:background="@color/white" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_setting_header" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/header_img" />
+                <TextView android:textColor="@color/grey_99" android:gravity="right" android:layout_gravity="center|right" android:id="@id/tv_setting_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改头像" android:drawableLeft="@drawable/red_point_bg" android:drawableRight="@mipmap/icon_go" android:drawablePadding="8.0dip" android:layout_weight="1.0" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/ll_setting_account" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账号安全中心" />
+                <TextView android:textColor="@color/grey_99" android:gravity="right" android:id="@id/tv_setting_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@mipmap/icon_go" android:drawablePadding="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昵称" />
+                <TextView android:textColor="@color/grey_99" android:gravity="right" android:id="@id/tv_setting_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="呢称996996" android:drawableRight="@mipmap/icon_go" android:drawablePadding="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/ll_setting_gender" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:id="@id/tv_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="性别" android:drawableRight="@drawable/red_point_bg" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+                <TextView android:textColor="@color/grey_99" android:gravity="right" android:id="@id/tv_setting_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未设置" android:drawableRight="@mipmap/icon_go" android:drawablePadding="8.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版本号" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:gravity="left" android:id="@id/tv_setting_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="1.0.1" android:drawablePadding="8.0dip" />
+                <TextView android:textColor="@color/themeColor" android:gravity="right" android:id="@id/tv_setting_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="检查更新" android:layout_weight="1.0" />
+                <ImageView android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@mipmap/icon_go" />
+            </LinearLayout>
+            <LinearLayout android:gravity="" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除缓存" />
+                <TextView android:textColor="@color/grey_99" android:gravity="right" android:id="@id/tv_setting_cache" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9990.5M" android:drawablePadding="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动清理缓存(100M)" android:layout_weight="1.0" />
+                <com.kyleduo.switchbutton.SwitchButton android:id="@id/sb_auto_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" app:kswTintColor="@color/themeColor" style="@style/SwitchButtonStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:padding="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="同时缓存个数" />
+                <TextView android:textColor="@color/grey_99" android:gravity="right" android:id="@id/tv_down_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1个" android:drawableRight="@mipmap/icon_go" android:drawablePadding="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="允许2G/3G/4G网络下缓存视频" android:layout_weight="1.0" />
+                <com.kyleduo.switchbutton.SwitchButton android:id="@id/sb_mobile_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" app:kswTintColor="@color/themeColor" style="@style/SwitchButtonStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动跳过片头片尾" android:layout_weight="1.0" />
+                <com.kyleduo.switchbutton.SwitchButton android:id="@id/sb_jump_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" app:kswTintColor="@color/themeColor" style="@style/SwitchButtonStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连续播放" android:layout_weight="1.0" />
+                <com.kyleduo.switchbutton.SwitchButton android:id="@id/sb_tv_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" app:kswTintColor="@color/themeColor" style="@style/SwitchButtonStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="播放器手势操作" android:layout_weight="1.0" />
+                <com.kyleduo.switchbutton.SwitchButton android:id="@id/sb_play_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" app:kswTintColor="@color/themeColor" style="@style/SwitchButtonStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/tv_friend_invite" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+                <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="填写好友邀请码" />
+                <TextView android:textColor="@color/grey_99" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@mipmap/icon_go" android:drawablePadding="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_setting_loginout" android:background="@drawable/login_btn_red_normal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="退  出" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

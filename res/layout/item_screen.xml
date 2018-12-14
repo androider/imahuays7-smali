@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/clarity_text_color_selector" android:gravity="center" android:id="@id/rb_select_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="49.0dip" android:button="@null" android:text="高清 720p"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="question_10_params">
+        <item>朋友推荐</item>
+        <item>广告</item>
+        <item>搜索电影时推荐的</item>
+        <item>以上都不是</item>
+    </string-array>
+    <string-array name="question_11_params">
+        <item>能免费看最新上映的电影</item>
+        <item>热播电视剧更新比其他平台快</item>
+        <item>观影过程没有广告</item>
+        <item>以上都不是</item>
+    </string-array>
+    <string-array name="question_12_params">
+        <item>专业影评</item>
+        <item>互动社区</item>
+        <item>花絮、小视频</item>
+        <item>以上都不是</item>
+    </string-array>
+    <string-array name="question_1_params">
+        <item>男士</item>
+        <item>女士</item>
+    </string-array>
+    <string-array name="question_2_params">
+        <item>18岁以下</item>
+        <item>18～23岁</item>
+        <item>24～32岁</item>
+        <item>30～40岁</item>
+        <item>40～50岁</item>
+        <item>50岁以上</item>
+    </string-array>
+    <string-array name="question_3_params">
+        <item>中学生</item>
+        <item>大学生</item>
+        <item>自由职业</item>
+        <item>办公室白领</item>
+        <item>待业</item>
+        <item>农民/工人</item>
+        <item>退休</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="question_4_params">
+        <item>麻花视频</item>
+        <item>优酷视频</item>
+        <item>腾讯视频</item>
+        <item>芒果视频</item>
+        <item>爱奇艺视频</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="question_5_params">
+        <item>10～20元</item>
+        <item>20～50元</item>
+        <item>50元以上</item>
+        <item>免费</item>
+    </string-array>
+    <string-array name="question_6_params">
+        <item>1小时以下</item>
+        <item>1～2小时</item>
+        <item>3～5小时</item>
+        <item>5～8小时</item>
+        <item>8小时以上</item>
+    </string-array>
+    <string-array name="question_7_params">
+        <item>电影</item>
+        <item>国产电视剧</item>
+        <item>美剧</item>
+        <item>日剧</item>
+        <item>韩剧</item>
+        <item>动漫</item>
+        <item>综艺</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="question_8_params">
+        <item>豆瓣</item>
+        <item>IMDB</item>
+        <item>猫眼</item>
+        <item>时光网</item>
+        <item>以上都不是</item>
+    </string-array>
+    <string-array name="question_9_params">
+        <item>付费观看</item>
+        <item>寻找或等待免费</item>
+        <item>借会员账号观看</item>
+        <item>其他渠道</item>
+    </string-array>
+</resources>

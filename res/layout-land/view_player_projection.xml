@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_projection_contains_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_projection_contains" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_projection_video_poster" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/cast_helper_bg" android:scaleType="fitXY" />
+        <View android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/start" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@mipmap/icon_video_play" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="00:00" android:layout_toRightOf="@id/start" android:layout_centerVertical="true" />
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/progress" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="100" android:progressDrawable="@drawable/video_fast_projection_seek_progress" android:minHeight="2.0dip" android:thumb="@drawable/video_projection_seek_thumb" android:layout_toLeftOf="@id/ll_view_projection_full" android:layout_toRightOf="@id/current" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_view_projection_full" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1:58:26" android:layout_toLeftOf="@id/fullscreen" android:layout_toRightOf="@id/progress" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_projection_btn_full" android:background="@drawable/player_video_projection_bg" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip">
+                    <ImageView android:id="@id/fullscreen" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@mipmap/player_fullscreen" android:scaleType="fitXY" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_projection_state" android:background="@drawable/projection_state" android:visibility="visible" android:layout_width="120.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tv_projection_state_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在投屏" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/layout_top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="15.0dip">
+            <ImageView android:id="@id/back" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="5.0dip" android:src="@mipmap/icon_back" android:scaleType="centerInside" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tv_projection_video_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="此处为影片标题" android:layout_toRightOf="@id/back" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="38.0dip" android:layout_height="21.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/play_logo" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_projection_device_name" android:background="@drawable/player_video_projection_device" android:paddingLeft="30.0dip" android:paddingTop="5.0dip" android:paddingRight="30.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="客厅的小米盒子" android:layout_below="@id/layout_top" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/projection_video_device_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/iv_projection_volume_subtract" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/project_volume_subtract" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="音量" />
+            <ImageView android:id="@id/iv_projection_volume_add" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/project_volume_add" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/projection_video_device_check" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="25.0dip" android:layout_below="@id/ll_projection_state" android:layout_centerHorizontal="true">
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/iv_projection_sharpness" android:paddingLeft="27.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标清" />
+            <View android:background="#66ffffff" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/iv_projection_exit" android:paddingLeft="14.0dip" android:paddingTop="10.0dip" android:paddingRight="14.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退出屏幕" />
+            <View android:background="#66ffffff" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/iv_projection_change_device" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="27.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="换设备" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_projection_fast" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_above="@id/ll_projection_state" android:layout_centerInParent="true">
+            <TextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/tv_projection_fast_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="35:32" />
+            <SeekBar android:layout_gravity="center_vertical" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="1.0dip" android:progressDrawable="@drawable/video_fast_projection_seek_progress" android:minHeight="1.0dip" android:thumb="@drawable/video_projection_fast_seek_thumb" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_projection_help_contains" android:background="#cc000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="26.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/projection_help_double_click" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="双击" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff4c92f2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="播放/暂停" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/projection_help_speed" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="屏幕中心" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff4c92f2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="进度" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_marginRight="18.0dip" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/projection_help_volume" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="屏幕右侧" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff4c92f2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="音量" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

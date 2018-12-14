@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" android:paddingBottom="15.0pt" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/partner_list_item_bg" android:layout_width="fill_parent" android:layout_height="24.0pt">
+        <TextView android:textSize="12.0pt" android:textColor="@color/grey_99" android:gravity="left" android:id="@id/tv_partner_time" android:layout_width="73.0pt" android:layout_height="wrap_content" android:layout_marginLeft="12.0pt" android:text="2018-10-05" />
+        <TextView android:textSize="12.0pt" android:textColor="@color/grey_99" android:gravity="left" android:id="@id/tv_partner_count" android:layout_width="100.0pt" android:layout_height="wrap_content" android:layout_marginLeft="12.0pt" android:text="推广人数:11人" />
+        <TextView android:textSize="12.0pt" android:textColor="@color/grey_99" android:gravity="left" android:id="@id/tv_partner_money" android:layout_width="112.0pt" android:layout_height="wrap_content" android:layout_marginLeft="8.0pt" android:text="分红：122333.56元" />
+    </LinearLayout>
+</LinearLayout>

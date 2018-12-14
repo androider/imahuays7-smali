@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/air_playing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="30.0dip" android:src="@mipmap/tving" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/grey_b1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:background="@color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:id="@id/rl_main_recommend" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <CheckBox android:textSize="10.0dip" android:textColor="@color/main_tab_color_selector" android:gravity="center" android:id="@id/cb_main_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="推荐" android:drawableTop="@drawable/main_recommend_selector" android:drawablePadding="1.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/rl_main_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <CheckBox android:textSize="10.0dip" android:textColor="@color/main_tab_color_selector" android:gravity="center" android:id="@id/cb_main_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="分享" android:drawableTop="@drawable/main_tv_selector" android:drawablePadding="1.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/rl_main_task" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <CheckBox android:textSize="10.0dip" android:textColor="@color/main_tab_color_selector" android:gravity="center" android:id="@id/cb_main_task" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="任务" android:drawableTop="@drawable/main_task_selector" android:drawablePadding="1.0dip" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/iv_task_sign" android:visibility="invisible" android:layout_width="7.5dip" android:layout_height="7.5dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/red_white_point_bg1" android:layout_toEndOf="@id/cb_main_task" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/rl_main_my" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <CheckBox android:textSize="10.0dip" android:textColor="@color/main_tab_color_selector" android:gravity="center" android:id="@id/cb_main_my" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="我的" android:drawableTop="@drawable/main_my_selector" android:drawablePadding="1.0dip" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/iv_message_new" android:visibility="invisible" android:layout_width="7.5dip" android:layout_height="7.5dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/red_white_point_bg1" android:layout_toEndOf="@id/cb_main_my" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

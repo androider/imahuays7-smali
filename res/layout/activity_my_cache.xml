@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:right_text="编辑" app:title="我的缓存" />
+    <com.mh.movie.core.mvp.ui.widget.PagerSlidingTabStrip android:textSize="16.0sp" android:id="@id/tabs" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" app:pstsDividerColor="@color/grey_cc" app:pstsIndicatorColor="@color/themeColor" app:pstsIndicatorHeight="2.0dip" app:pstsIndicatorWidth="30.0dip" app:pstsSelectedTabTextColor="@color/themeColor" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="16.0dip" app:pstsUnderlineColor="@color/grey_cc" app:pstsUnderlineHeight="1.0dip" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginTop="18.0dip" android:layout_marginRight="@dimen/page_margin_right">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_player_detail_commend" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="center" android:id="@id/no_commend_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="没有评论，快来成为第一个评论的人吧！" />
+        <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

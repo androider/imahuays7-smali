@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:right_text="注册" app:title="登录" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="125.0dip" android:layout_height="125.0dip" android:layout_marginTop="20.0dip" android:src="@mipmap/logo" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="68.0dip" android:layout_marginRight="@dimen/activity_horizontal_margin">
+                <EditText android:textSize="13.0sp" android:textColor="@color/grey_99" android:textColorHint="@color/grey_99" android:id="@id/et_phone_num" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="请输入手机号" android:inputType="numberDecimal" android:textCursorDrawable="@null" />
+                <View android:background="@color/my_bg_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="12.0dip" android:layout_marginRight="@dimen/activity_horizontal_margin">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/themeColor" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/tv_countdown" android:background="@drawable/login_verification_code_normal" android:layout_width="95.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="获取验证码" />
+                    <EditText android:textSize="13.0sp" android:textColor="@color/grey_99" android:textColorHint="@color/grey_99" android:id="@id/et_phone_code" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:hint="请输入验证码" android:inputType="numberDecimal" android:textCursorDrawable="@null" />
+                </FrameLayout>
+                <View android:background="@color/my_bg_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" />
+            </LinearLayout>
+            <com.mh.movie.core.mvp.ui.widget.ExpandableLayout android:orientation="vertical" android:id="@id/rl_invitation_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/collapse_value" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/themeColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选填" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@mipmap/icon_arrow_gray_down" />
+                </LinearLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@id/expand_value" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+                        <EditText android:textSize="13.0sp" android:textColor="@color/grey_99" android:textColorHint="@color/grey_99" android:gravity="center_horizontal" android:id="@id/et_invitation_code" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="邀请码" android:inputType="numberDecimal" android:textCursorDrawable="@null" />
+                        <View android:background="@color/my_bg_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.mh.movie.core.mvp.ui.widget.ExpandableLayout>
+            <TextView android:gravity="center" android:id="@id/btn_login" android:background="@drawable/login_btn_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="50.0dip" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="登录" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_vertical_margin" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/cb_agreement" android:background="@drawable/checkbox_background" android:layout_width="14.0dip" android:layout_height="14.0dip" android:checked="true" android:button="@null" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:id="@id/tv_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+    </LinearLayout>
+</RelativeLayout>

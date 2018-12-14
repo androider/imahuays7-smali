@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_play" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.SwipeRefreshLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.mh.movie.core.mvp.ui.activity.player.MHVideoPlayer android:id="@id/video_player" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

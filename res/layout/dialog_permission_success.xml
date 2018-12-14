@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="180.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_dialog_title" android:background="@mipmap/background_vip_backgroundpopup" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="开通VIP特权成功" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/corner_bottom_white_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0dip" android:textColor="@color/grey_99" android:gravity="center" android:id="@id/tv_dialog_message" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="已开通一个特权功能" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_dialog_ok" android:background="@drawable/login_btn_red" android:layout_width="167.0dip" android:layout_height="34.0dip" android:layout_marginTop="30.0dip" android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

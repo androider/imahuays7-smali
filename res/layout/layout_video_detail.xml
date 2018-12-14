@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/page_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.banner.Banner android:id="@id/banner_adlist" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="16.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_player_detail_intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/page_margin_right">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_player_introduce" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_player_label" android:background="@drawable/tag_corner_bg" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:text="热播" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/text_22" android:ellipsize="end" android:id="@id/tv_player_detail_name" android:paddingRight="60.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="疯狂动物城疯狂动物城疯狂动物城" android:hint="疯狂动物城" android:maxLines="1" android:maxEms="15" android:layout_toRightOf="@id/tv_player_label" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/text_66" android:id="@id/tv_player_introduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="简介" android:hint="简介" android:layout_toLeftOf="@id/iv_player_icon_go" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_player_icon_go" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/player_icon_go" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/content_sign" android:id="@id/tv_player_detail_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="8.5分" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/content_h3" android:id="@id/tv_player_detail_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="03万次播放   爱情/剧情..." />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                    <TextView android:textSize="11.0dip" android:textColor="@color/grey_99" android:id="@id/tv_player_detail_up_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="影片来源：" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_player_detail_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/iv_player_detail_share_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fenxiang_icon" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="分享" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_player_detail_feedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="42.0dip" android:layout_toLeftOf="@id/ll_player_detail_share" android:layout_centerVertical="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/fankui_icon" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="反馈" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/page_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginTop="15.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/page_margin_right">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_player_detail_comment" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_player_detail_comment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/details_comment_hot" android:scaleType="fitXY" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_66" android:id="@id/tv_player_detail_comment_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="1920热评" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_player_detail_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.0dip" android:layout_toLeftOf="@id/ll_player_detail_down">
+            <ImageView android:id="@id/iv_player_detail_up_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_like" android:scaleType="fitXY" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_66" android:id="@id/tv_player_detail_up_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="1920" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_player_detail_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/iv_player_detail_down_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_unlike" android:scaleType="fitXY" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_66" android:id="@id/tv_player_detail_down_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="9800" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/page_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_player_detail_tv" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sort_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginRight="@dimen/page_margin_right">
+            <TextView android:textSize="15.0dip" android:textColor="@color/text_22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选集" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/text_66" android:gravity="right" android:id="@id/tv_player_detail_tv_part" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="更新至17集" android:hint="更新至17集" android:layout_toLeftOf="@id/iv_player_detail_tv_go" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_player_detail_tv_go" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/player_icon_go" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_player_detail_tv" android:paddingLeft="@dimen/page_margin_left" android:paddingRight="@dimen/page_margin_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <View android:background="@color/page_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/page_margin_left" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_detail_tag" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/page_margin_right">
+            <ImageView android:id="@id/iv_player_detail_movie_go" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/expand_more" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+            <com.mh.movie.core.mvp.ui.widget.LabelsView android:id="@id/labels" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="25.0dip" android:layout_toLeftOf="@id/iv_player_detail_movie_go" app:labelBackground="@drawable/label_bg" app:labelTextColor="@drawable/label_text_color_1" app:labelTextPaddingBottom="5.0dip" app:labelTextPaddingLeft="8.0dip" app:labelTextPaddingRight="8.0dip" app:labelTextPaddingTop="5.0dip" app:labelTextSize="14.0dip" app:lineMargin="15.0dip" app:maxSelect="0" app:selectType="NONE" app:wordMargin="10.0dip" />
+        </RelativeLayout>
+        <View android:background="@color/page_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginTop="15.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_player_like" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/text_22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_left" android:text="猜你喜欢" />
+            <ImageView android:id="@id/iv_player_detail_guess_like_go" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/page_margin_right" android:src="@mipmap/player_icon_go" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_player_detail_guess_like" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.mh.movie.core.mvp.ui.widget.MovieCardView android:id="@id/mcv_player_detail_guess_like" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginTop="20.0dip" />
+        <View android:background="@color/page_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginTop="15.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_hot_comment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/themeColor" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="热门评论" />
+        <View android:background="@color/grey_e8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_hot_comment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom_comment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_left" android:layout_marginRight="@dimen/page_margin_right">
+            <LinearLayout android:id="@id/ll_comment" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_player_detail_commend_new" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/player_commend_selected" android:id="@id/tv_player_detail_commend_new" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最新" />
+                    <View android:id="@id/v_player_detail_commend_new_line" android:background="@drawable/item_player_commend_type_line" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="2.0dip" android:layout_marginTop="7.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_player_detail_commend_all" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_toRightOf="@id/ll_player_detail_commend_new">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/player_commend_normal" android:id="@id/tv_player_detail_commend_all" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最热" />
+                    <View android:id="@id/v_player_detail_commend_all_line" android:background="@drawable/item_player_commend_type_line" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="2.0dip" android:layout_marginTop="7.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/grey_e8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignBottom="@id/ll_comment" />
+        </RelativeLayout>
+        <com.mh.movie.core.mvp.ui.widget.ControlScrollViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.mh.movie.core.mvp.ui.widget.recylerview.RecyclerFooterView android:id="@id/rfv_footer_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/grey_99" android:gravity="center" android:id="@id/tv_no_comment" android:paddingBottom="60.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="没有评论，快来成为第一个评论的人吧！" />
+</LinearLayout>

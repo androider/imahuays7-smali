@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jess.arms.widget.autolayout.AutoCardView android:layout_width="fill_parent" android:layout_height="550.0px" android:layout_marginRight="15.0px" android:layout_marginBottom="15.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="bottom|center" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" />
+</com.jess.arms.widget.autolayout.AutoCardView>

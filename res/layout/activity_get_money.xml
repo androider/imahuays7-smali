@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:background="@color/white" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="false" app:left_icon="@mipmap/ico_nav_back_red" app:right_icon="@null" app:right_text="兑换纪录" app:title="麻花推广平台" app:title_color="@color/black" app:topbar_color="@color/white" app:topbar_transparent="false" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="127.0dip" android:layout_marginTop="53.0dip">
+                <TextView android:textColor="@color/text_66" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="总计分红" />
+                <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textSize="20.0dip" android:textColor="@color/share_system" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="1.0dip" android:text="¥" />
+                    <TextView android:textSize="40.0dip" android:textColor="@color/share_system" android:id="@id/tv_money_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="233330" />
+                    <TextView android:textSize="20.0dip" android:textColor="@color/share_system" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="1.0dip" android:text="¥" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.mh.movie.core.mvp.ui.widget.ControlScrollViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" />
+        </LinearLayout>
+        <com.mh.movie.core.mvp.ui.widget.PagerSlidingTabStrip android:textSize="16.0sp" android:id="@id/tabs" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="1.0dip" app:pstsDividerColor="@color/white" app:pstsIndicatorColor="@color/share_system" app:pstsIndicatorHeight="2.0dip" app:pstsIndicatorWidth="30.0dip" app:pstsSelectedTabTextColor="@color/share_system" app:pstsShouldExpand="true" app:pstsTabPaddingLeftRight="16.0dip" app:pstsUnderlineColor="@color/white" app:pstsUnderlineHeight="1.0dip" />
+    </FrameLayout>
+</LinearLayout>

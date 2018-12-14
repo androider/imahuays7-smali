@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textColor="@color/label_text_color_selector" android:id="@id/cb_cache_pager" android:background="@drawable/item_player_tv_part" android:paddingLeft="20.0dip" android:paddingTop="11.0dip" android:paddingRight="20.0dip" android:paddingBottom="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:src="@mipmap/loading" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff8d8d8d" android:layout_gravity="center" android:id="@id/tv_load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:right_text="编辑" app:title="我的缓存" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/themeColor" android:gravity="center_vertical" android:id="@id/tv_addcache" android:paddingLeft="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="缓存更多视频" android:drawableLeft="@mipmap/download_more" android:drawablePadding="5.0dip" />
+                    <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="right" android:id="@id/ll_sort" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/themeColor" android:gravity="center|right" android:id="@id/tv_sort" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="排序" android:drawableLeft="@mipmap/sort_up" android:drawablePadding="5.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#fff2f4f5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <include layout="@layout/completed_playtv_item" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_operator" android:layout_below="@id/top">
+                <android.support.v7.widget.RecyclerView android:id="@id/wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_operator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_alignParentBottom="true">
+                <View android:background="@color/my_bg_color" android:layout_width="fill_parent" android:layout_height="0.75dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/content_h1" android:gravity="center" android:id="@id/tv_selected_all" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="全选" android:layout_weight="1.0" />
+                    <View android:background="@color/my_bg_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="17.0dip" android:layout_marginBottom="17.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/grey_99" android:gravity="center" android:id="@id/tv_delete" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="删除" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <com.mh.movie.core.mvp.ui.widget.cache.CacheView android:id="@id/cv_cache_view" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

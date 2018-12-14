@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/player_portrait_view" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/surface_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <master.flame.danmaku.ui.widget.DanmakuView android:id="@id/danmaku_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/thumb" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+    <RelativeLayout android:id="@id/layout_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_player_video_danma">
+                <ImageView android:id="@id/start" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="15.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="00:00" android:layout_toRightOf="@id/start" android:layout_centerVertical="true" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/player_split" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:layout_toRightOf="@id/current" android:layout_centerVertical="true" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1:58:26" android:layout_toRightOf="@id/player_split" android:layout_centerVertical="true" />
+                <com.mh.movie.core.mvp.ui.widget.SeekBarNotDrag android:layout_gravity="center_vertical" android:id="@id/progress" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="100" android:progressDrawable="@drawable/video_seek_progress" android:minHeight="2.0dip" android:thumb="@drawable/video_seek_thumb" android:layout_toLeftOf="@id/fullscreen" android:layout_toRightOf="@id/total" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/fullscreen" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layerType="software" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_player_video_danma" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true">
+                <EditText android:textSize="12.0sp" android:textColor="#ffbbbbbb" android:textColorHint="#ffbbbbbb" android:gravity="center_vertical" android:id="@id/et_video_player_danma_input" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="快来表达你的感想吧" android:layout_toLeftOf="@id/tv_video_player_danma_send" android:imeOptions="flagNoExtractUi|flagNoFullscreen" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_video_player_danma_send" android:clickable="true" android:layout_width="67.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="发送" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_land_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:id="@id/ll_progress" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_land_player_video_danma">
+                    <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/land_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="00:00" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <SeekBar android:id="@id/land_progress" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="100" android:progressDrawable="@drawable/video_seek_progress" android:minHeight="2.0dip" android:thumb="@drawable/video_seek_thumb" android:layout_toLeftOf="@id/land_total" android:layout_toRightOf="@id/land_current" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/land_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="1:58:26" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_land_player_video_danma" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/land_start" android:layout_width="18.0dip" android:layout_height="18.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_player_video_next" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/land_start" android:layout_centerVertical="true" />
+                <LinearLayout android:id="@id/ll_danmu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/ll_video_play_choice" android:layout_toRightOf="@id/iv_player_video_next">
+                    <EditText android:textSize="12.0sp" android:textColor="#ffbbbbbb" android:textColorHint="#ffbbbbbb" android:gravity="center_vertical" android:id="@id/et_land_video_player_danma_input" android:paddingLeft="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:nextFocusLeft="@id/thumb" android:nextFocusRight="@id/thumb" android:nextFocusUp="@id/thumb" android:nextFocusDown="@id/thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:hint="快来表达你的感想吧" android:imeOptions="flagNoExtractUi|flagNoFullscreen" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_video_play_choice" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_land_video_player_danma_send" android:visibility="gone" android:clickable="true" android:layout_width="67.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="发送" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/btn_video_hd_choice" android:paddingLeft="20.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="标清" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/btn_video_tv_part_choice" android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="选集" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@id/bottom_progressbar" android:layout_width="0.0dip" android:layout_height="1.5dip" android:max="100" android:progressDrawable="@drawable/video_progress" android:layout_alignParentBottom="true" style="?android:progressBarStyleHorizontal" />
+    <ImageView android:id="@id/back_tiny" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_top" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/land_fullscreen" android:padding="7.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+                <ImageView android:id="@id/iv_player_video_screen" android:padding="7.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" />
+                <ImageView android:id="@id/iv_player_video_danma_toggle" android:padding="7.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" />
+                <ImageView android:id="@id/iv_player_video_share" android:padding="7.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" />
+                <ImageView android:id="@id/iv_player_video_setting" android:padding="7.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" />
+                <ImageView android:layout_width="38.0dip" android:layout_height="21.0dip" android:layout_marginLeft="12.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/title" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:id="@id/v_player_detail_center_line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" android:layout_centerInParent="true" />
+    <com.mh.movie.core.mvp.ui.activity.player.view.VideoLoadingView android:id="@id/loading" android:visibility="gone" android:layout_width="180.0dip" android:layout_height="55.0dip" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/rl_video_player_detail" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="14.0sp" android:id="@id/tv_video_player_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您正在观看热门影片" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_video_player_try_watch" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" />
+                    <TextView android:textSize="12.0sp" android:id="@id/tv_video_player_try_watch_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="试看9999M" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_video_player_watch_mhb" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+                    <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" />
+                    <TextView android:textSize="12.0sp" android:id="@id/tv_video_player_watch_mhb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="观看正片（50麻花币）" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:id="@id/tv_video_player_video_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="正在使用移动流量，播放将产生流量费用" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_video_player_detail_one" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_video_player_try_watch_one" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" />
+                <TextView android:textSize="12.0sp" android:id="@id/tv_video_player_try_watch_m_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="试看9999M" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:id="@id/tv_video_player_video_tip_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="正在使用移动流量，播放将产生流量费用" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/small_close" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/video_small_close" android:scaleType="centerInside" />
+    <ImageView android:id="@id/lock_screen" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="50.0dip" android:src="@drawable/unlock" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/land_lock_screen" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/back" android:paddingLeft="12.0dip" android:paddingTop="9.0dip" android:paddingRight="12.0dip" android:paddingBottom="9.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="15.0dip" android:scaleType="fitXY" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_video_play_info" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正使用流量播放标清清晰度，本视频约108M" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_video_jump_play_contains" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="70.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_video_jump_play_close" android:layout_width="11.0dip" android:layout_height="11.0dip" android:layout_marginLeft="15.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffd1d1d1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="上次看到：" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffd1d1d1" android:id="@id/tv_video_jump_play_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01:30:50" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffff0000" android:id="@id/tv_video_jump_play" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="15.0dip" android:text="跳转播放" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_video_loading_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对不起，加载失败请重试" />
+        <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tv_video_reload" android:paddingLeft="23.0dip" android:paddingTop="8.0dip" android:paddingRight="23.0dip" android:paddingBottom="8.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="点击重试" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_video_fast" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="24.0sp" android:id="@id/tv_video_fast_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="35:32" />
+        <com.mh.movie.core.mvp.ui.widget.SeekBarNotDrag android:layout_gravity="center_vertical" android:id="@id/sb_video_fast_progress" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="1.0dip" android:max="100" android:progressDrawable="@drawable/video_fast_projection_seek_progress" android:minHeight="1.0dip" android:thumb="@drawable/video_projection_fast_seek_thumb" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_video_pause" android:visibility="gone" android:layout_width="105.0dip" android:layout_height="32.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_width="14.0dip" android:layout_height="16.0dip" />
+        <TextView android:textSize="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="已暂停" />
+    </LinearLayout>
+</RelativeLayout>

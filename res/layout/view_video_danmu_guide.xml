@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_video_danmu_guide" android:layout_width="265.0dip" android:layout_height="64.0dip">
+        <ImageView android:id="@id/iv_video_danmu_guide" android:layout_width="265.0dip" android:layout_height="64.0dip" android:src="@mipmap/pic_player_bubblebox" />
+        <View android:id="@id/v_video_danmu_guide_close" android:clickable="true" android:layout_width="44.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

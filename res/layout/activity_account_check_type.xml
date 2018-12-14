@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/my_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mh.movie.core.mvp.ui.widget.Topbar android:id="@id/topbar" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" app:back_enable="true" app:right_icon="@null" app:title="修改密码" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginTop="1.0px">
+        <TextView android:textSize="12.0dip" android:textColor="@color/grey_99" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="修改登陆密码需先进行身份验证" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/grey_99" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="请选择验证方式" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_phone_check" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px">
+        <TextView android:textSize="12.0dip" android:textColor="@color/text_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="通过手机号验证" />
+        <TextView android:textColor="@color/grey_99" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@mipmap/icon_go" android:drawablePadding="8.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

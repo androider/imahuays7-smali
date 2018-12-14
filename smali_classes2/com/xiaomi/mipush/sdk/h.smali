@@ -1,0 +1,183 @@
+.class final Lcom/xiaomi/mipush/sdk/h;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final synthetic a:Landroid/content/Context;
+
+
+# direct methods
+.method constructor <init>(Landroid/content/Context;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/xiaomi/mipush/sdk/h;->a:Landroid/content/Context;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 9
+
+    iget-object v0, p0, Lcom/xiaomi/mipush/sdk/h;->a:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/xiaomi/mipush/sdk/MiPushClient;->a(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    iget-object v0, p0, Lcom/xiaomi/mipush/sdk/h;->a:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/xiaomi/mipush/sdk/e;->a(Landroid/content/Context;)Lcom/xiaomi/mipush/sdk/e;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaomi/mipush/sdk/e;->m()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v1, v0, :cond_2
+
+    :try_start_0
+    iget-object v0, p0, Lcom/xiaomi/mipush/sdk/h;->a:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v0
+
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Landroid/content/pm/PackageManager;->getInstalledPackages(I)Ljava/util/List;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/content/pm/PackageInfo;
+
+    iget-object v1, v1, Landroid/content/pm/PackageInfo;->services:[Landroid/content/pm/ServiceInfo;
+
+    if-eqz v1, :cond_0
+
+    array-length v2, v1
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v2, :cond_0
+
+    aget-object v4, v1, v3
+
+    iget-boolean v5, v4, Landroid/content/pm/ServiceInfo;->exported:Z
+
+    if-eqz v5, :cond_1
+
+    iget-boolean v5, v4, Landroid/content/pm/ServiceInfo;->enabled:Z
+
+    if-eqz v5, :cond_1
+
+    const-string v5, "com.xiaomi.mipush.sdk.PushMessageHandler"
+
+    iget-object v6, v4, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    iget-object v5, p0, Lcom/xiaomi/mipush/sdk/h;->a:Landroid/content/Context;
+
+    invoke-virtual {v5}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v5
+
+    iget-object v6, v4, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_1
+
+    if-nez v5, :cond_1
+
+    :try_start_1
+    invoke-static {}, Ljava/lang/Math;->random()D
+
+    move-result-wide v5
+
+    const-wide/high16 v7, 0x4000000000000000L    # 2.0
+
+    mul-double v5, v5, v7
+
+    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
+
+    add-double/2addr v5, v7
+
+    double-to-long v5, v5
+
+    const-wide/16 v7, 0x3e8
+
+    mul-long v5, v5, v7
+
+    invoke-static {v5, v6}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_1
+    .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_0
+    :try_start_2
+    new-instance v5, Landroid/content/Intent;
+
+    invoke-direct {v5}, Landroid/content/Intent;-><init>()V
+
+    iget-object v6, v4, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+
+    iget-object v4, v4, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
+
+    invoke-virtual {v5, v6, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string v4, "com.xiaomi.mipush.sdk.WAKEUP"
+
+    invoke-virtual {v5, v4}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    iget-object v4, p0, Lcom/xiaomi/mipush/sdk/h;->a:Landroid/content/Context;
+
+    invoke-virtual {v4, v5}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    :try_end_2
+    .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_1
+
+    :cond_1
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :catch_1
+    :cond_2
+    return-void
+.end method
