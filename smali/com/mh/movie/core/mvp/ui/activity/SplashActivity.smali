@@ -146,10 +146,18 @@
 .method private h()V
     .locals 2
 
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/mh/movie/core/mvp/ui/activity/SplashActivity;->f:Z
+
     .line 163
     iget-boolean v0, p0, Lcom/mh/movie/core/mvp/ui/activity/SplashActivity;->f:Z
 
     if-eqz v0, :cond_2
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/mh/movie/core/mvp/ui/activity/SplashActivity;->i:Z
 
     iget-boolean v0, p0, Lcom/mh/movie/core/mvp/ui/activity/SplashActivity;->i:Z
 
@@ -1129,10 +1137,10 @@
 
 .method public f()V
     .locals 0
-
+#Q_M
     .line 428
-    invoke-virtual {p0}, Lcom/mh/movie/core/mvp/ui/activity/SplashActivity;->g()V
-
+    #invoke-virtual {p0}, Lcom/mh/movie/core/mvp/ui/activity/SplashActivity;->h()V
+    invoke-direct {p0}, Lcom/mh/movie/core/mvp/ui/activity/SplashActivity;->h()V
     return-void
 .end method
 
