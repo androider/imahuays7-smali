@@ -1736,7 +1736,7 @@
     :cond_0
     iget-object v0, p0, Lcom/mh/movie/core/mvp/ui/activity/main/MainActivity;->h:Lcom/mh/movie/core/mvp/ui/widget/dialog/RequestPermissionDialog;
 
-    invoke-virtual {v0}, Lcom/mh/movie/core/mvp/ui/widget/dialog/RequestPermissionDialog;->show()V
+    #invoke-virtual {v0}, Lcom/mh/movie/core/mvp/ui/widget/dialog/RequestPermissionDialog;->show()V
 
     goto :goto_0
 
