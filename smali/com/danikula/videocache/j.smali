@@ -25,18 +25,14 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
 
-    const/4 v0, 0x1
+   .registers 1
 
-    .line 22
+    .prologue
+    .line 16
+    const/4 v0, 0x0
+
     new-array v0, v0, [Ljava/net/Proxy;
-
-    sget-object v1, Ljava/net/Proxy;->NO_PROXY:Ljava/net/Proxy;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 

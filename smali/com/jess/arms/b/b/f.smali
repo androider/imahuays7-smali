@@ -205,20 +205,20 @@
 
     invoke-direct {v0}, Lcom/jess/arms/b/b/f$a;-><init>()V
 
-    .line 121
-    sget-object v1, Ljava/net/Proxy;->NO_PROXY:Ljava/net/Proxy;
+    #.line 121
+    #sget-object v1, Ljava/net/Proxy;->NO_PROXY:Ljava/net/Proxy;
 
-    .line 122
-    invoke-virtual {p2, v1}, Lokhttp3/OkHttpClient$Builder;->proxy(Ljava/net/Proxy;)Lokhttp3/OkHttpClient$Builder;
+    #.line 122
+    #invoke-virtual {p2, v1}, Lokhttp3/OkHttpClient$Builder;->proxy(Ljava/net/Proxy;)Lokhttp3/OkHttpClient$Builder;
 
-    move-result-object v1
+    #move-result-object v1
 
     sget-object v2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v3, 0xa
 
     .line 123
-    invoke-virtual {v1, v3, v4, v2}, Lokhttp3/OkHttpClient$Builder;->connectTimeout(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder;
+    invoke-virtual {p2, v3, v4, v2}, Lokhttp3/OkHttpClient$Builder;->connectTimeout(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder;
 
     move-result-object v1
 

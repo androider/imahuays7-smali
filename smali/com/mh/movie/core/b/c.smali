@@ -153,12 +153,12 @@
 
     invoke-direct {v0}, Lokhttp3/OkHttpClient$Builder;-><init>()V
 
-    sget-object v1, Ljava/net/Proxy;->NO_PROXY:Ljava/net/Proxy;
+    #sget-object v1, Ljava/net/Proxy;->NO_PROXY:Ljava/net/Proxy;
 
-    .line 164
-    invoke-virtual {v0, v1}, Lokhttp3/OkHttpClient$Builder;->proxy(Ljava/net/Proxy;)Lokhttp3/OkHttpClient$Builder;
+    #.line 164
+    #invoke-virtual {v0, v1}, Lokhttp3/OkHttpClient$Builder;->proxy(Ljava/net/Proxy;)Lokhttp3/OkHttpClient$Builder;
 
-    move-result-object v0
+    #move-result-object v0
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -237,9 +237,9 @@
     invoke-direct {v1}, Lokhttp3/OkHttpClient$Builder;-><init>()V
 
     .line 202
-    sget-object v2, Ljava/net/Proxy;->NO_PROXY:Ljava/net/Proxy;
+    #sget-object v2, Ljava/net/Proxy;->NO_PROXY:Ljava/net/Proxy;
 
-    invoke-virtual {v1, v2}, Lokhttp3/OkHttpClient$Builder;->proxy(Ljava/net/Proxy;)Lokhttp3/OkHttpClient$Builder;
+    #invoke-virtual {v1, v2}, Lokhttp3/OkHttpClient$Builder;->proxy(Ljava/net/Proxy;)Lokhttp3/OkHttpClient$Builder;
 
     .line 203
     invoke-virtual {v1, v0}, Lokhttp3/OkHttpClient$Builder;->sslSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)Lokhttp3/OkHttpClient$Builder;
