@@ -50,6 +50,7 @@
     <application
         android:name="com.mh.movie.core.mvp.ui.MHApplication"
         android:allowBackup="true"
+        android:debuggable="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
