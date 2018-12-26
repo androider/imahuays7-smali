@@ -86,10 +86,11 @@
 .end method
 
 .method public isUpdate()Z
-    .locals 1
+    .registers 2
 
-    .line 29
-    iget-boolean v0, p0, Lcom/mh/movie/core/mvp/model/entity/response/ChannelResponse;->update:Z
+    .prologue
+    .line 12
+    const/4 v0, 0x0
 
     return v0
 .end method
