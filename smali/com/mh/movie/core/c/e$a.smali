@@ -138,7 +138,8 @@
 
     move-result-object p2
 
-    invoke-interface {p2, p1}, Lcom/mh/movie/core/c/a;->c(Ljava/lang/String;)V
+    #invoke-interface {p2, p1}, Lcom/mh/movie/core/c/a;->c(Ljava/lang/String;)V
+    invoke-interface {p2}, Lcom/mh/movie/core/c/a;->h()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
