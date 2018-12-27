@@ -41,10 +41,11 @@
 .end method
 
 .method public getUrl()Ljava/lang/String;
-    .locals 1
+    .registers 2
 
-    .line 45
-    iget-object v0, p0, Lcom/mh/movie/core/mvp/model/entity/response/ChannelResponse;->url:Ljava/lang/String;
+    .prologue
+    .line 16
+    const-string v0, ""
 
     return-object v0
 .end method
